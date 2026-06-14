@@ -3,1259 +3,1006 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="theme-color" content="#0d2a4d">
-<title>Isenção de Imposto de Renda para Militares Inativos | Fábia Borges Advocacia</title>
-<meta name="description" content="Militares inativos, reformados ou da reserva remunerada podem ter direito à isenção do Imposto de Renda em razão de doença grave, acidente em serviço ou moléstia profissional. Faça uma verificação inicial gratuita.">
+<meta name="theme-color" content="#0e2a47">
+<title>Isenção de Imposto de Renda para Militares | Fábia Borges Advocacia</title>
+<meta name="description" content="Blog jurídico informativo: militares inativos, reformados ou da reserva remunerada podem ter direito à isenção do Imposto de Renda em razão de doença grave, acidente em serviço ou moléstia profissional. Faça uma verificação inicial gratuita.">
+<meta name="author" content="Fábia Adilina Cordeiro Borges - OAB/BA 88.678 | OAB/RJ 180.383">
 <meta name="robots" content="index, follow">
-
-<!-- Open Graph -->
-<meta property="og:type" content="website">
+<meta property="og:type" content="article">
 <meta property="og:title" content="Isenção de Imposto de Renda para Militares Inativos">
-<meta property="og:description" content="Faça uma verificação inicial gratuita e descubra se vale a pena analisar o seu caso.">
+<meta property="og:description" content="Verificação inicial gratuita e estimativa informativa. Conteúdo de caráter meramente informativo.">
 <meta property="og:locale" content="pt_BR">
 
 <style>
-  /* ===================== RESET & BASE ===================== */
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  /* ============ RESET ============ */
+  *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 
-  :root {
-    --navy:        #0d2a4d;  /* azul-marinho */
-    --navy-deep:   #081d36;
-    --navy-light:  #1b3f6b;
-    --green:       #15402c;  /* verde escuro */
-    --green-soft:  #1d5a3d;
-    --gold:        #c5a04e;  /* dourado discreto */
-    --gold-light:  #e2c97f;
-    --white:       #ffffff;
-    --offwhite:    #f6f8fb;
-    --gray-light:  #eef1f5;
-    --gray:        #5a6675;
-    --gray-dark:   #2c333d;
-    --text:        #20303f;
-    --shadow:      0 10px 30px rgba(13, 42, 77, 0.12);
-    --shadow-soft: 0 4px 14px rgba(13, 42, 77, 0.08);
-    --radius:      14px;
-    --maxw:        1140px;
+  :root{
+    --navy:#0e2a47;
+    --navy-deep:#0a1f35;
+    --navy-soft:#1b3f63;
+    --green:#16432d;
+    --green-soft:#1f6043;
+    --gold:#bd9540;
+    --gold-light:#e0c578;
+    --paper:#f6f3ec;       /* fundo papel/editorial */
+    --paper-2:#efe9dd;
+    --white:#ffffff;
+    --line:#e3ddd0;
+    --ink:#1e2833;         /* texto */
+    --ink-soft:#54606e;    /* texto secundário */
+    --shadow:0 14px 38px rgba(14,42,71,.12);
+    --shadow-sm:0 4px 16px rgba(14,42,71,.08);
+    --radius:16px;
+    --maxw:1120px;
+    --read:760px;          /* largura de leitura tipo blog */
   }
 
-  html { scroll-behavior: smooth; -webkit-text-size-adjust: 100%; }
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
 
-  body {
-    font-family: "Segoe UI", system-ui, -apple-system, "Helvetica Neue", Arial, sans-serif;
-    font-size: 18px;
-    line-height: 1.7;
-    color: var(--text);
-    background: var(--white);
-    -webkit-font-smoothing: antialiased;
-    text-rendering: optimizeLegibility;
+  body{
+    font-family:"Segoe UI",system-ui,-apple-system,Roboto,"Helvetica Neue",Arial,sans-serif;
+    font-size:18px;line-height:1.75;color:var(--ink);background:var(--paper);
+    -webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility;
   }
-
-  @media (min-width: 768px) { body { font-size: 19px; } }
-
-  img { max-width: 100%; display: block; }
-
-  a { color: inherit; }
-
-  /* ===================== ACCESSIBILITY ===================== */
-  :focus-visible {
-    outline: 3px solid var(--gold);
-    outline-offset: 3px;
-    border-radius: 4px;
-  }
-
-  .skip-link {
-    position: absolute;
-    left: -999px;
-    top: 0;
-    background: var(--gold);
-    color: var(--navy-deep);
-    padding: 12px 20px;
-    font-weight: 700;
-    z-index: 999;
-    border-radius: 0 0 8px 0;
-  }
-  .skip-link:focus { left: 0; }
-
-  .sr-only {
-    position: absolute; width: 1px; height: 1px;
-    padding: 0; margin: -1px; overflow: hidden;
-    clip: rect(0,0,0,0); white-space: nowrap; border: 0;
-  }
-
-  /* ===================== LAYOUT HELPERS ===================== */
-  .container { width: 100%; max-width: var(--maxw); margin: 0 auto; padding: 0 20px; }
-
-  section { padding: 56px 0; }
-  @media (min-width: 768px) { section { padding: 80px 0; } }
-
-  .section-head { text-align: center; max-width: 760px; margin: 0 auto 40px; }
-
-  h1, h2, h3 { line-height: 1.25; color: var(--navy); font-weight: 800; letter-spacing: -0.2px; }
-
-  h2 { font-size: 1.7rem; margin-bottom: 14px; }
-  @media (min-width: 768px) { h2 { font-size: 2.25rem; } }
-
-  h3 { font-size: 1.25rem; }
-
-  .eyebrow {
-    display: inline-block;
-    color: var(--green-soft);
-    font-weight: 800;
-    font-size: 0.92rem;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    margin-bottom: 12px;
-  }
-
-  .lead { font-size: 1.12rem; color: var(--gray-dark); }
-
-  /* ===================== BUTTONS / CTA ===================== */
-  .btn {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
-    font-size: 1.18rem;
-    font-weight: 800;
-    line-height: 1.2;
-    text-decoration: none;
-    padding: 18px 30px;
-    border-radius: 50px;
-    border: 2px solid transparent;
-    cursor: pointer;
-    transition: transform .15s ease, box-shadow .15s ease, background-color .15s ease;
-    min-height: 60px;
-    text-align: center;
-  }
-
-  .btn-whatsapp {
-    background: linear-gradient(180deg, #2ab348 0%, #1e9c3b 100%);
-    color: #fff;
-    box-shadow: 0 8px 22px rgba(30, 156, 59, 0.35);
-  }
-  .btn-whatsapp:hover, .btn-whatsapp:focus { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(30, 156, 59, 0.45); }
-
-  .btn-gold {
-    background: linear-gradient(180deg, var(--gold-light) 0%, var(--gold) 100%);
-    color: var(--navy-deep);
-    box-shadow: 0 8px 22px rgba(197, 160, 78, 0.35);
-  }
-  .btn-gold:hover, .btn-gold:focus { transform: translateY(-2px); box-shadow: 0 12px 28px rgba(197, 160, 78, 0.5); }
-
-  .btn-outline {
-    background: transparent;
-    color: var(--white);
-    border-color: rgba(255,255,255,.6);
-  }
-  .btn-outline:hover, .btn-outline:focus { background: rgba(255,255,255,.12); }
-
-  .btn .wa-icon { width: 26px; height: 26px; flex-shrink: 0; fill: currentColor; }
-
-  /* ===================== HERO ===================== */
-  .hero {
-    position: relative;
-    background:
-      radial-gradient(1200px 500px at 80% -10%, rgba(197,160,78,.18), transparent 60%),
-      linear-gradient(160deg, var(--navy) 0%, var(--navy-deep) 55%, var(--green) 130%);
-    color: #fff;
-    padding: 44px 0 56px;
-    overflow: hidden;
-  }
-  @media (min-width: 768px) { .hero { padding: 70px 0 84px; } }
-
-  .hero::after {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='60' height='60'%3E%3Cpath d='M0 0h60v60H0z' fill='none'/%3E%3Cpath d='M30 6l4 12h12l-10 8 4 12-10-8-10 8 4-12-10-8h12z' fill='%23ffffff' fill-opacity='0.03'/%3E%3C/svg%3E");
-    pointer-events: none;
-  }
-
-  .hero .container { position: relative; z-index: 1; }
-
-  .hero-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: rgba(255,255,255,.1);
-    border: 1px solid rgba(197,160,78,.5);
-    color: var(--gold-light);
-    padding: 8px 16px;
-    border-radius: 50px;
-    font-size: 0.9rem;
-    font-weight: 700;
-    letter-spacing: 0.5px;
-    margin-bottom: 22px;
-  }
-
-  .hero h1 {
-    color: #fff;
-    font-size: 1.95rem;
-    line-height: 1.2;
-    max-width: 900px;
-  }
-  @media (min-width: 768px) { .hero h1 { font-size: 3rem; } }
-
-  .hero h1 .accent { color: var(--gold-light); }
-
-  .hero-sub {
-    font-size: 1.18rem;
-    color: #dfe7f1;
-    max-width: 720px;
-    margin: 22px 0 30px;
-  }
-  @media (min-width: 768px) { .hero-sub { font-size: 1.3rem; } }
-
-  .hero-cta-row { display: flex; flex-wrap: wrap; gap: 16px; align-items: center; }
-
-  .hero-note { font-size: 0.95rem; color: #b9c6d6; margin-top: 16px; }
-
-  /* Trust badges */
-  .trust-row {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 14px;
-    margin-top: 40px;
-  }
-  @media (min-width: 620px) { .trust-row { grid-template-columns: repeat(3, 1fr); } }
-
-  .trust-item {
-    display: flex;
-    align-items: center;
-    gap: 12px;
-    background: rgba(255,255,255,.07);
-    border: 1px solid rgba(255,255,255,.14);
-    border-radius: 12px;
-    padding: 16px 18px;
-    font-weight: 600;
-    font-size: 1rem;
-    color: #eaf0f7;
-  }
-  .trust-item .ic {
-    width: 40px; height: 40px; flex-shrink: 0;
-    display: grid; place-items: center;
-    border-radius: 10px;
-    background: rgba(197,160,78,.18);
-    color: var(--gold-light);
-  }
-  .trust-item svg { width: 22px; height: 22px; fill: var(--gold-light); }
-
-  /* ===================== "QUEM PODE TER DIREITO" ===================== */
-  .who { background: var(--offwhite); }
-
-  .pill-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 14px;
-    margin-bottom: 30px;
-  }
-  @media (min-width: 560px) { .pill-grid { grid-template-columns: repeat(2, 1fr); } }
-  @media (min-width: 900px) { .pill-grid { grid-template-columns: repeat(3, 1fr); } }
-
-  .pill-card {
-    background: #fff;
-    border: 1px solid var(--gray-light);
-    border-left: 5px solid var(--green-soft);
-    border-radius: 12px;
-    padding: 20px 22px;
-    box-shadow: var(--shadow-soft);
-    display: flex;
-    align-items: center;
-    gap: 14px;
-    font-weight: 700;
-    color: var(--navy);
-  }
-  .pill-card .check {
-    width: 30px; height: 30px; flex-shrink: 0;
-    border-radius: 50%;
-    background: var(--green-soft);
-    display: grid; place-items: center;
-  }
-  .pill-card .check svg { width: 16px; height: 16px; fill: #fff; }
-
-  .note-box {
-    background: #fff;
-    border: 1px solid var(--gray-light);
-    border-radius: 12px;
-    padding: 20px 24px;
-    color: var(--gray-dark);
-    box-shadow: var(--shadow-soft);
-    border-top: 4px solid var(--gold);
-    margin-bottom: 44px;
-  }
-
-  .subhead { text-align: center; margin-bottom: 8px; }
-  .subhead h3 { font-size: 1.4rem; color: var(--navy); }
-  .subhead p { color: var(--gray); margin-bottom: 28px; text-align: center; }
-
-  .disease-grid {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 12px;
-  }
-  @media (min-width: 640px) { .disease-grid { grid-template-columns: repeat(3, 1fr); } }
-  @media (min-width: 960px) { .disease-grid { grid-template-columns: repeat(5, 1fr); } }
-
-  .disease-card {
-    background: #fff;
-    border: 1px solid var(--gray-light);
-    border-radius: 12px;
-    padding: 22px 14px;
-    text-align: center;
-    box-shadow: var(--shadow-soft);
-    transition: transform .15s ease, box-shadow .15s ease;
-  }
-  .disease-card:hover { transform: translateY(-3px); box-shadow: var(--shadow); }
-  .disease-card .ic {
-    width: 48px; height: 48px; margin: 0 auto 12px;
-    display: grid; place-items: center;
-    background: var(--gray-light);
-    border-radius: 12px;
-    color: var(--navy);
-  }
-  .disease-card .ic svg { width: 26px; height: 26px; stroke: var(--navy); fill: none; stroke-width: 1.8; }
-  .disease-card strong { display: block; font-size: 1rem; color: var(--navy); line-height: 1.35; }
-  .disease-card small { display: block; color: var(--gray); font-size: 0.85rem; margin-top: 4px; }
-
-  /* ===================== QUESTIONÁRIO (ASSISTENTE PASSO A PASSO) ===================== */
-  .quiz { background: linear-gradient(160deg, var(--navy) 0%, var(--navy-deep) 100%); color: #fff; }
-  .quiz h2 { color: #fff; }
-  .quiz .eyebrow { color: var(--gold-light); }
-  .quiz .section-head p { color: #cfdae8; }
-
-  .quiz-card {
-    background: #fff;
-    color: var(--text);
-    border-radius: 18px;
-    box-shadow: 0 20px 50px rgba(0,0,0,.3);
-    max-width: 720px;
-    margin: 0 auto;
-    overflow: hidden;
-  }
-
-  /* Barra superior: rótulo do passo + bolinhas */
-  .quiz-topbar {
-    display: flex; align-items: center; justify-content: space-between;
-    gap: 16px; flex-wrap: wrap;
-    padding: 22px 26px 0;
-  }
-  .quiz-step-label { font-size: 1.05rem; color: var(--navy); font-weight: 800; }
-  .quiz-dots { display: flex; gap: 9px; }
-  .quiz-dots i {
-    width: 12px; height: 12px; border-radius: 50%;
-    background: var(--gray-light); display: block;
-    transition: background .3s ease, transform .3s ease;
-  }
-  .quiz-dots i.done { background: var(--green-soft); }
-  .quiz-dots i.current { background: var(--gold); transform: scale(1.3); }
-
-  .quiz-progress {
-    height: 12px;
-    background: var(--gray-light);
-    border-radius: 50px; overflow: hidden;
-    margin: 14px 26px 0;
-  }
-  .quiz-progress span {
-    display: block; height: 100%; width: 0%;
-    background: linear-gradient(90deg, var(--green-soft), var(--gold));
-    border-radius: 50px;
-    transition: width .4s ease;
-  }
-
-  /* Container dos passos: um por vez */
-  .quiz-steps { position: relative; padding: 10px 26px 30px; }
-  .quiz-step { display: none; }
-  .quiz-step.active { display: block; animation: fadeUp .35s ease; }
-  @keyframes fadeUp { from { opacity:0; transform: translateY(14px);} to {opacity:1; transform:none;} }
-
-  /* Passo de abertura */
-  .quiz-intro { text-align: center; padding: 22px 4px 6px; }
-  .quiz-intro .big-icon {
-    width: 84px; height: 84px; margin: 0 auto 18px;
-    background: var(--navy); border-radius: 22px;
-    display: grid; place-items: center;
-  }
-  .quiz-intro .big-icon svg { width: 44px; height: 44px; stroke: var(--gold-light); fill: none; stroke-width: 1.8; }
-  .quiz-intro h3 { font-size: 1.4rem; color: var(--navy); margin-bottom: 10px; }
-  .quiz-intro p { color: var(--gray-dark); font-size: 1.08rem; max-width: 500px; margin: 0 auto 20px; }
-  .quiz-intro .mini-feats {
-    display: flex; flex-wrap: wrap; justify-content: center; gap: 10px 22px;
-    margin-bottom: 26px; color: var(--green-soft); font-weight: 700; font-size: 1rem;
-  }
-  .quiz-intro .mini-feats span { display: inline-flex; align-items: center; gap: 7px; }
-  .quiz-intro .mini-feats svg { width: 20px; height: 20px; fill: var(--green-soft); }
-  .quiz-start-btn { width: 100%; max-width: 420px; }
-
-  /* Pergunta */
-  .q-counter { color: var(--gold); font-weight: 800; font-size: 0.95rem; letter-spacing: .6px; text-transform: uppercase; }
-  .q-text {
-    font-size: 1.4rem; line-height: 1.35; color: var(--navy);
-    font-weight: 800; margin: 8px 0 24px;
-  }
-  @media (min-width:768px){ .q-text { font-size: 1.6rem; } }
-
-  .q-options { display: flex; flex-direction: column; gap: 14px; }
-
-  .opt-btn {
-    width: 100%;
-    display: flex; align-items: center; gap: 16px;
-    padding: 20px 22px;
-    border: 2px solid var(--gray-light);
-    border-radius: 14px;
-    background: var(--offwhite);
-    cursor: pointer;
-    font-size: 1.2rem; font-weight: 800; color: var(--gray-dark);
-    text-align: left;
-    transition: all .15s ease;
-    min-height: 72px;
-  }
-  .opt-btn:hover { border-color: var(--navy-light); transform: translateY(-1px); box-shadow: var(--shadow-soft); }
-  .opt-btn .opt-ic {
-    width: 44px; height: 44px; flex-shrink: 0;
-    border-radius: 50%; display: grid; place-items: center;
-    border: 2px solid currentColor;
-  }
-  .opt-btn .opt-ic svg { width: 22px; height: 22px; fill: currentColor; }
-  .opt-btn.opt-sim { color: var(--green-soft); }
-  .opt-btn.opt-nao { color: var(--navy); }
-  .opt-btn.selected.opt-sim { background: var(--green-soft); color:#fff; border-color: var(--green-soft); }
-  .opt-btn.selected.opt-nao { background: var(--navy); color:#fff; border-color: var(--navy); }
-  .opt-btn.selected .opt-ic { border-color: #fff; }
-  .opt-btn:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
-
-  /* Navegação (Voltar) */
-  .quiz-nav {
-    display: flex; align-items: center; justify-content: space-between;
-    margin-top: 24px; gap: 12px;
-  }
-  .nav-back {
-    background: none; border: 2px solid var(--gray-light);
-    color: var(--gray-dark); font-weight: 700; font-size: 1rem;
-    padding: 12px 22px; border-radius: 50px; cursor: pointer;
-    display: inline-flex; align-items: center; gap: 8px;
-    min-height: 52px;
-    transition: all .15s ease;
-  }
-  .nav-back:hover { border-color: var(--navy); color: var(--navy); }
-  .nav-back svg { width: 18px; height: 18px; fill: currentColor; }
-  .nav-hint { color: var(--gray); font-size: 0.92rem; text-align: right; }
-
-  /* Resultado */
-  .result-icon {
-    width: 80px; height: 80px; margin: 6px auto 18px;
-    border-radius: 50%; display: grid; place-items: center;
-  }
-  .result-icon.positive { background: rgba(29,90,61,.12); }
-  .result-icon.positive svg { stroke: var(--green-soft); }
-  .result-icon.neutral { background: rgba(197,160,78,.18); }
-  .result-icon.neutral svg { stroke: var(--gold); }
-  .result-icon svg { width: 42px; height: 42px; fill: none; stroke-width: 2.4; }
-
-  .quiz-result-inner { text-align: center; padding: 8px 2px; }
-  .quiz-result-inner h3 { font-size: 1.4rem; margin-bottom: 12px; color: var(--navy); }
-  .quiz-result-inner p { color: var(--gray-dark); margin-bottom: 22px; font-size: 1.1rem; }
-  .quiz-result-inner .btn { width: 100%; }
-  .restart-btn {
-    display: inline-flex; align-items: center; gap: 7px; margin: 20px auto 0;
-    background: none; border: none;
-    color: var(--gray); font-size: 1rem;
-    text-decoration: underline; cursor: pointer; font-weight: 600;
-  }
-  .restart-btn svg { width: 18px; height: 18px; fill: currentColor; }
-  .disclaimer-mini {
-    text-align: center; font-size: 0.9rem; color: var(--gray);
-    margin-top: 18px; line-height: 1.55;
-  }
-
-  /* ===================== COMO FUNCIONA ===================== */
-  .how { background: var(--offwhite); }
-  .steps {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 22px;
-  }
-  @media (min-width: 820px) { .steps { grid-template-columns: repeat(3, 1fr); } }
-
-  .step-card {
-    background: #fff;
-    border: 1px solid var(--gray-light);
-    border-radius: var(--radius);
-    padding: 32px 26px;
-    box-shadow: var(--shadow-soft);
-    position: relative;
-    text-align: center;
-  }
-  .step-num {
-    position: absolute; top: -18px; left: 50%; transform: translateX(-50%);
-    width: 44px; height: 44px;
-    background: linear-gradient(180deg, var(--gold-light), var(--gold));
-    color: var(--navy-deep);
-    border-radius: 50%;
-    display: grid; place-items: center;
-    font-weight: 800; font-size: 1.15rem;
-    box-shadow: var(--shadow-soft);
-  }
-  .step-icon {
-    width: 64px; height: 64px; margin: 14px auto 18px;
-    background: var(--navy);
-    border-radius: 16px;
-    display: grid; place-items: center;
-  }
-  .step-icon svg { width: 32px; height: 32px; stroke: var(--gold-light); fill: none; stroke-width: 1.8; }
-  .step-card h3 { color: var(--navy); margin-bottom: 10px; }
-  .step-card p { color: var(--gray-dark); font-size: 1rem; }
-
-  /* ===================== CREDIBILIDADE ===================== */
-  .credib { background: #fff; }
-  .credib-grid {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 14px;
-    margin-bottom: 30px;
-  }
-  @media (min-width: 600px) { .credib-grid { grid-template-columns: repeat(2, 1fr); } }
-  @media (min-width: 980px) { .credib-grid { grid-template-columns: repeat(3, 1fr); } }
-
-  .credib-item {
-    display: flex; align-items: center; gap: 14px;
-    background: var(--offwhite);
-    border-radius: 12px;
-    padding: 18px 20px;
-    border: 1px solid var(--gray-light);
-    font-weight: 700; color: var(--navy);
-    font-size: 1.05rem;
-  }
-  .credib-item .check {
-    width: 32px; height: 32px; flex-shrink: 0;
-    background: var(--green-soft); border-radius: 8px;
-    display: grid; place-items: center;
-  }
-  .credib-item .check svg { width: 18px; height: 18px; fill: #fff; }
-
-  .credib-note {
-    max-width: 760px; margin: 0 auto;
-    text-align: center; color: var(--gray-dark);
-    background: var(--offwhite);
-    border-radius: 12px; padding: 22px 26px;
-    border-top: 4px solid var(--green-soft);
-    font-size: 1.05rem;
-  }
-
-  /* ===================== FAQ ===================== */
-  .faq { background: var(--offwhite); }
-  .faq-list { max-width: 820px; margin: 0 auto; }
-
-  .faq-item {
-    background: #fff;
-    border: 1px solid var(--gray-light);
-    border-radius: 12px;
-    margin-bottom: 14px;
-    overflow: hidden;
-    box-shadow: var(--shadow-soft);
-  }
-  .faq-q {
-    width: 100%;
-    text-align: left;
-    background: none; border: none; cursor: pointer;
-    padding: 22px 24px;
-    font-size: 1.12rem; font-weight: 700; color: var(--navy);
-    display: flex; align-items: center; justify-content: space-between; gap: 16px;
-    line-height: 1.4;
-  }
-  .faq-q:hover { color: var(--navy-light); }
-  .faq-q .arrow {
-    flex-shrink: 0; width: 26px; height: 26px;
-    transition: transform .3s ease; fill: var(--gold);
-  }
-  .faq-q[aria-expanded="true"] .arrow { transform: rotate(180deg); }
-
-  .faq-a {
-    max-height: 0; overflow: hidden;
-    transition: max-height .35s ease;
-  }
-  .faq-a-inner { padding: 0 24px 22px; color: var(--gray-dark); font-size: 1.05rem; }
-
-  /* ===================== CHAMADA FINAL ===================== */
-  .final-cta {
-    background:
-      radial-gradient(900px 400px at 20% 0%, rgba(197,160,78,.2), transparent 60%),
-      linear-gradient(150deg, var(--green) 0%, var(--navy-deep) 70%, var(--navy) 100%);
-    color: #fff;
-    text-align: center;
-  }
-  .final-cta h2 { color: #fff; max-width: 820px; margin: 0 auto 18px; }
-  .final-cta p { color: #dbe5f0; max-width: 680px; margin: 0 auto 32px; font-size: 1.15rem; }
-  .final-cta .btn { font-size: 1.25rem; padding: 22px 40px; }
-  .final-note { margin-top: 18px; font-size: 0.95rem; color: #b9c6d6; }
-
-  /* ===================== FOOTER ===================== */
-  footer {
-    background: var(--navy-deep);
-    color: #cdd8e6;
-    padding: 50px 0 120px;
-    font-size: 0.96rem;
-  }
-  @media (min-width: 768px) { footer { padding-bottom: 60px; } }
-
-  .footer-grid {
-    display: grid; grid-template-columns: 1fr; gap: 30px;
-  }
-  @media (min-width: 820px) { .footer-grid { grid-template-columns: 1.3fr 1fr; gap: 50px; } }
-
-  .footer-brand h3 { color: #fff; font-size: 1.2rem; margin-bottom: 6px; }
-  .footer-brand .oab { color: var(--gold-light); font-weight: 700; margin-bottom: 14px; }
-  .footer-contact p { margin-bottom: 8px; }
-  .footer-contact strong { color: #fff; }
-  .footer-contact a { color: var(--gold-light); text-decoration: none; }
-  .footer-contact a:hover { text-decoration: underline; }
-
-  .footer-compliance {
-    background: rgba(255,255,255,.05);
-    border: 1px solid rgba(255,255,255,.1);
-    border-radius: 12px;
-    padding: 20px 22px;
-    color: #aebccd;
-    font-size: 0.92rem;
-    line-height: 1.65;
-  }
-  .footer-compliance p + p { margin-top: 10px; }
-
-  .footer-bottom {
-    border-top: 1px solid rgba(255,255,255,.12);
-    margin-top: 36px; padding-top: 22px;
-    text-align: center; color: #8a99ab; font-size: 0.88rem;
-  }
-
-  /* ===================== WHATSAPP FLOAT ===================== */
-  .wa-float {
-    position: fixed;
-    right: 18px; bottom: 18px;
-    z-index: 200;
-    display: inline-flex;
-    align-items: center;
-    gap: 10px;
-    background: linear-gradient(180deg, #2ab348 0%, #1e9c3b 100%);
-    color: #fff;
-    text-decoration: none;
-    font-weight: 800;
-    padding: 14px 20px 14px 16px;
-    border-radius: 50px;
-    box-shadow: 0 10px 28px rgba(0,0,0,.3);
-    animation: waPulse 2.6s infinite;
-  }
-  .wa-float svg { width: 30px; height: 30px; fill: #fff; }
-  .wa-float .wa-text { font-size: 1rem; }
-  @media (max-width: 520px) {
-    .wa-float .wa-text { display: none; }
-    .wa-float { padding: 16px; }
-  }
-  @keyframes waPulse {
-    0% { box-shadow: 0 10px 28px rgba(0,0,0,.3), 0 0 0 0 rgba(42,179,72,.5); }
-    70% { box-shadow: 0 10px 28px rgba(0,0,0,.3), 0 0 0 16px rgba(42,179,72,0); }
-    100% { box-shadow: 0 10px 28px rgba(0,0,0,.3), 0 0 0 0 rgba(42,179,72,0); }
-  }
-
-  @media (prefers-reduced-motion: reduce) {
-    * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
-  }
+  @media(min-width:768px){body{font-size:19px}}
+
+  img{max-width:100%;display:block}
+  a{color:inherit}
+
+  /* Tipografia editorial: títulos em serifa = cara de blogue/revista jurídica */
+  h1,h2,h3,h4{font-family:Georgia,"Times New Roman","Iowan Old Style",serif;color:var(--navy);line-height:1.22;font-weight:700;letter-spacing:-.2px}
+
+  /* ============ ACESSIBILIDADE ============ */
+  :focus-visible{outline:3px solid var(--gold);outline-offset:3px;border-radius:6px}
+  .skip-link{position:absolute;left:-999px;top:0;background:var(--gold);color:var(--navy-deep);padding:12px 20px;font-weight:700;z-index:999;border-radius:0 0 8px 0}
+  .skip-link:focus{left:0}
+  .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+  /* ============ LAYOUT ============ */
+  .container{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 20px}
+  .read{max-width:var(--read);margin-left:auto;margin-right:auto}
+  section{padding:54px 0}
+  @media(min-width:768px){section{padding:74px 0}}
+
+  .kicker{display:inline-block;font-family:"Segoe UI",system-ui,sans-serif;color:var(--green-soft);font-weight:800;font-size:.82rem;letter-spacing:2px;text-transform:uppercase;margin-bottom:14px}
+  .kicker.on-dark{color:var(--gold-light)}
+  h2.title{font-size:1.75rem;margin-bottom:14px}
+  @media(min-width:768px){h2.title{font-size:2.4rem}}
+  .section-intro{color:var(--ink-soft);font-size:1.1rem;margin-bottom:34px}
+
+  /* ============ BOTÕES ============ */
+  .btn{display:inline-flex;align-items:center;justify-content:center;gap:12px;font-family:"Segoe UI",system-ui,sans-serif;font-size:1.12rem;font-weight:800;line-height:1.2;text-decoration:none;padding:17px 30px;border-radius:50px;border:2px solid transparent;cursor:pointer;transition:transform .15s ease,box-shadow .15s ease,background-color .15s ease;min-height:60px;text-align:center}
+  .btn:active{transform:translateY(1px)}
+  .btn-wa{background:linear-gradient(180deg,#2ab348,#1e9c3b);color:#fff;box-shadow:0 8px 22px rgba(30,156,59,.32)}
+  .btn-wa:hover,.btn-wa:focus{transform:translateY(-2px);box-shadow:0 12px 28px rgba(30,156,59,.45)}
+  .btn-gold{background:linear-gradient(180deg,var(--gold-light),var(--gold));color:var(--navy-deep);box-shadow:0 8px 22px rgba(189,149,64,.3)}
+  .btn-gold:hover,.btn-gold:focus{transform:translateY(-2px);box-shadow:0 12px 28px rgba(189,149,64,.45)}
+  .btn-navy{background:var(--navy);color:#fff}
+  .btn-navy:hover,.btn-navy:focus{background:var(--navy-soft)}
+  .btn-ghost{background:transparent;color:var(--navy);border-color:var(--line);box-shadow:none}
+  .btn-ghost:hover,.btn-ghost:focus{border-color:var(--navy);background:#fff}
+  .btn-ghost.on-dark{color:#fff;border-color:rgba(255,255,255,.5)}
+  .btn-ghost.on-dark:hover,.btn-ghost.on-dark:focus{background:rgba(255,255,255,.12)}
+  .btn .wa{width:25px;height:25px;flex:0 0 auto;fill:currentColor}
+  .btn-block{width:100%}
+
+  /* ============ TOP BAR / NAV (cara de blogue) ============ */
+  .topbar{background:var(--navy-deep);color:#dfe7f1;font-size:.86rem;text-align:center;padding:8px 16px;letter-spacing:.3px}
+  .topbar strong{color:var(--gold-light)}
+
+  header.site{position:sticky;top:0;z-index:120;background:rgba(246,243,236,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line)}
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding:12px 20px;max-width:var(--maxw);margin:0 auto}
+  .brand{display:flex;align-items:center;gap:12px;text-decoration:none}
+  .brand .mono{width:46px;height:46px;border-radius:12px;background:linear-gradient(150deg,var(--navy),var(--green));color:var(--gold-light);display:grid;place-items:center;font-family:Georgia,serif;font-weight:700;font-size:1.2rem;flex:0 0 auto}
+  .brand .bn{font-family:Georgia,serif;font-weight:700;color:var(--navy);font-size:1.06rem;line-height:1.15}
+  .brand small{display:block;font-family:"Segoe UI",sans-serif;font-weight:600;color:var(--ink-soft);font-size:.72rem;letter-spacing:.4px}
+  .nav-links{display:none;gap:26px;align-items:center}
+  .nav-links a{text-decoration:none;color:var(--navy);font-weight:600;font-size:.98rem}
+  .nav-links a:hover{color:var(--green-soft)}
+  .nav-cta{display:none}
+  @media(min-width:920px){.nav-links{display:flex}.nav-cta{display:inline-flex}}
+
+  /* ============ HERO / POST EM DESTAQUE ============ */
+  .hero{background:
+      radial-gradient(900px 380px at 88% -10%,rgba(189,149,64,.10),transparent 60%),
+      linear-gradient(180deg,var(--paper) 0%,var(--paper-2) 100%);
+      border-bottom:1px solid var(--line);padding:42px 0 56px}
+  @media(min-width:768px){.hero{padding:60px 0 72px}}
+  .post-tags{display:flex;flex-wrap:wrap;gap:10px;margin-bottom:18px}
+  .tag{font-family:"Segoe UI",sans-serif;font-size:.76rem;font-weight:800;letter-spacing:1px;text-transform:uppercase;padding:7px 13px;border-radius:50px}
+  .tag.navy{background:var(--navy);color:#fff}
+  .tag.gold{background:rgba(189,149,64,.16);color:#8a6a1f;border:1px solid rgba(189,149,64,.5)}
+  .tag.green{background:rgba(31,96,67,.12);color:var(--green-soft);border:1px solid rgba(31,96,67,.3)}
+  .hero h1{font-size:2rem;line-height:1.18;max-width:14ch}
+  @media(min-width:768px){.hero h1{font-size:3.2rem;max-width:18ch}}
+  .hero h1 .hl{color:var(--green-soft)}
+  .hero-sub{font-size:1.16rem;color:var(--ink-soft);max-width:62ch;margin:20px 0 24px}
+  @media(min-width:768px){.hero-sub{font-size:1.28rem}}
+
+  .byline{display:flex;align-items:center;gap:14px;margin:22px 0 30px;flex-wrap:wrap}
+  .byline .av{width:52px;height:52px;border-radius:50%;background:linear-gradient(150deg,var(--navy),var(--green));color:var(--gold-light);display:grid;place-items:center;font-family:Georgia,serif;font-weight:700;font-size:1.15rem;flex:0 0 auto}
+  .byline .meta{font-size:.95rem;color:var(--ink-soft);line-height:1.4}
+  .byline .meta strong{display:block;color:var(--navy);font-family:Georgia,serif;font-size:1.02rem}
+  .byline .dot{opacity:.5;margin:0 6px}
+
+  .hero-cta{display:flex;flex-wrap:wrap;gap:14px;align-items:center}
+  .hero-note{font-size:.92rem;color:var(--ink-soft);margin-top:16px}
+
+  /* ============ TRUST STRIP ============ */
+  .trust{background:var(--navy);color:#eaf0f7}
+  .trust .container{display:grid;grid-template-columns:1fr;gap:14px;padding-top:26px;padding-bottom:26px}
+  @media(min-width:680px){.trust .container{grid-template-columns:repeat(3,1fr)}}
+  .trust-item{display:flex;align-items:center;gap:13px;font-weight:600;font-size:1rem}
+  .trust-item .ic{width:42px;height:42px;flex:0 0 auto;border-radius:11px;background:rgba(189,149,64,.18);display:grid;place-items:center}
+  .trust-item .ic svg{width:22px;height:22px;fill:var(--gold-light)}
+
+  /* ============ CARDS GENÉRICOS ============ */
+  .card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow-sm)}
+
+  /* Quem pode ter direito */
+  .who{background:var(--paper)}
+  .pill-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-bottom:30px}
+  @media(min-width:560px){.pill-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:960px){.pill-grid{grid-template-columns:repeat(3,1fr)}}
+  .pill{background:#fff;border:1px solid var(--line);border-left:5px solid var(--green-soft);border-radius:12px;padding:18px 20px;box-shadow:var(--shadow-sm);display:flex;align-items:center;gap:13px;font-weight:700;color:var(--navy)}
+  .pill .ck{width:30px;height:30px;flex:0 0 auto;border-radius:50%;background:var(--green-soft);display:grid;place-items:center}
+  .pill .ck svg{width:16px;height:16px;fill:#fff}
+
+  .disease-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:12px;margin-top:8px}
+  @media(min-width:640px){.disease-grid{grid-template-columns:repeat(3,1fr)}}
+  @media(min-width:980px){.disease-grid{grid-template-columns:repeat(5,1fr)}}
+  .disease{background:#fff;border:1px solid var(--line);border-radius:12px;padding:20px 12px;text-align:center;box-shadow:var(--shadow-sm);transition:transform .15s ease,box-shadow .15s ease}
+  .disease:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+  .disease .ic{width:46px;height:46px;margin:0 auto 10px;border-radius:12px;background:var(--paper-2);display:grid;place-items:center}
+  .disease .ic svg{width:25px;height:25px;stroke:var(--navy);fill:none;stroke-width:1.7}
+  .disease strong{display:block;font-family:"Segoe UI",sans-serif;font-size:.98rem;color:var(--navy);line-height:1.3}
+  .disease small{display:block;color:var(--ink-soft);font-size:.82rem;margin-top:3px}
+
+  .notice{display:flex;gap:14px;align-items:flex-start;background:#fff;border:1px solid var(--line);border-top:4px solid var(--gold);border-radius:12px;padding:18px 22px;color:var(--ink-soft);box-shadow:var(--shadow-sm);margin-top:26px}
+  .notice .bang{width:30px;height:30px;flex:0 0 auto;border-radius:50%;background:rgba(189,149,64,.18);color:#8a6a1f;display:grid;place-items:center;font-weight:800}
+
+  /* ============ QUIZ ============ */
+  .verify{background:linear-gradient(180deg,var(--navy) 0%,var(--navy-deep) 100%);color:#fff}
+  .verify .title{color:#fff}
+  .verify .section-intro{color:#cfdae8}
+  .widget{background:#fff;color:var(--ink);border-radius:20px;box-shadow:0 24px 60px rgba(0,0,0,.32);max-width:720px;margin:0 auto;overflow:hidden}
+
+  .quiz-top{padding:22px 24px 6px}
+  .quiz-stepname{display:flex;justify-content:space-between;align-items:center;font-family:"Segoe UI",sans-serif;font-size:.92rem;font-weight:700;color:var(--ink-soft);margin-bottom:10px}
+  .quiz-stepname .dots{display:flex;gap:6px}
+  .quiz-stepname .dots i{width:9px;height:9px;border-radius:50%;background:var(--line);display:block}
+  .quiz-stepname .dots i.on{background:var(--gold)}
+  .quiz-stepname .dots i.done{background:var(--green-soft)}
+  .bar{height:10px;background:var(--paper-2);border-radius:50px;overflow:hidden}
+  .bar > span{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--green-soft),var(--gold));border-radius:50px;transition:width .35s ease}
+
+  .quiz-body{padding:18px 24px 26px}
+  .quiz-panel{display:none;animation:fade .35s ease}
+  .quiz-panel.on{display:block}
+  @keyframes fade{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+
+  .quiz-intro-ic{width:64px;height:64px;border-radius:16px;background:linear-gradient(150deg,var(--navy),var(--green));display:grid;place-items:center;margin-bottom:16px}
+  .quiz-intro-ic svg{width:32px;height:32px;stroke:var(--gold-light);fill:none;stroke-width:1.8}
+  .quiz-q{font-family:Georgia,serif;font-size:1.3rem;color:var(--navy);line-height:1.3;margin-bottom:4px}
+  @media(min-width:768px){.quiz-q{font-size:1.5rem}}
+  .quiz-help{color:var(--ink-soft);font-size:.96rem;margin-bottom:18px}
+
+  .opts{display:grid;gap:12px}
+  .opt{display:flex;align-items:center;gap:14px;width:100%;text-align:left;background:var(--paper);border:2px solid var(--line);border-radius:14px;padding:18px 18px;font-family:"Segoe UI",sans-serif;font-size:1.1rem;font-weight:700;color:var(--ink);cursor:pointer;transition:all .15s ease;min-height:64px}
+  .opt:hover{border-color:var(--navy-soft);background:#fff}
+  .opt .mk{width:30px;height:30px;flex:0 0 auto;border-radius:50%;border:2px solid var(--line);display:grid;place-items:center;background:#fff;transition:all .15s ease}
+  .opt .mk svg{width:16px;height:16px;fill:#fff;opacity:0;transition:opacity .15s}
+  .opt.sel{border-color:var(--green-soft);background:rgba(31,96,67,.08)}
+  .opt.sel .mk{background:var(--green-soft);border-color:var(--green-soft)}
+  .opt.sel .mk svg{opacity:1}
+
+  .quiz-nav{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-top:20px}
+  .lnk{background:none;border:none;cursor:pointer;font-family:"Segoe UI",sans-serif;font-weight:700;color:var(--ink-soft);font-size:1rem;display:inline-flex;align-items:center;gap:6px;padding:10px 6px}
+  .lnk:hover{color:var(--navy)}
+  .lnk[disabled]{opacity:.35;cursor:default}
+
+  /* Resultado do quiz */
+  .result-ic{width:72px;height:72px;border-radius:50%;display:grid;place-items:center;margin:0 auto 16px}
+  .result-ic.s3{background:rgba(31,96,67,.14)}
+  .result-ic.s3 svg{stroke:var(--green-soft)}
+  .result-ic.s2{background:rgba(189,149,64,.18)}
+  .result-ic.s2 svg{stroke:var(--gold)}
+  .result-ic.s1{background:rgba(27,63,99,.12)}
+  .result-ic.s1 svg{stroke:var(--navy-soft)}
+  .result-ic svg{width:38px;height:38px;fill:none;stroke-width:2.3}
+  #quizResult h3{text-align:center;font-size:1.4rem;margin-bottom:12px}
+  #quizResult p.msg{text-align:center;color:var(--ink-soft);font-size:1.08rem;margin-bottom:22px}
+  .result-actions{display:grid;gap:12px}
+  .restart{display:block;margin:14px auto 0;background:none;border:none;color:var(--ink-soft);text-decoration:underline;font-weight:600;cursor:pointer;font-family:"Segoe UI",sans-serif}
+  .mini-disc{text-align:center;font-size:.85rem;color:var(--ink-soft);margin-top:16px;line-height:1.5}
+
+  /* ============ CALCULADORA ============ */
+  .calc{background:var(--paper-2)}
+  .calc-card{max-width:740px;margin:0 auto;padding:30px 26px}
+  @media(min-width:768px){.calc-card{padding:40px 40px}}
+  .calc-help{background:rgba(189,149,64,.12);border:1px solid rgba(189,149,64,.4);border-radius:12px;padding:16px 18px;color:#6f561a;font-size:.97rem;margin-bottom:26px}
+  .field{margin-bottom:20px}
+  .field label{display:block;font-family:"Segoe UI",sans-serif;font-weight:700;color:var(--navy);margin-bottom:8px;font-size:1.02rem}
+  .field .req{color:#b8341f}
+  .field input,.field select{width:100%;font-size:1.08rem;padding:15px 16px;border:2px solid var(--line);border-radius:12px;background:#fff;color:var(--ink);font-family:"Segoe UI",sans-serif;min-height:56px;-webkit-appearance:none;appearance:none}
+  .field input:focus,.field select:focus{border-color:var(--navy-soft);outline:none;box-shadow:0 0 0 3px rgba(27,63,99,.12)}
+  .field select{background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='20' height='20' viewBox='0 0 24 24' fill='%230e2a47'%3E%3Cpath d='M7 10l5 5 5-5z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-right:44px}
+  .field .hintline{font-size:.86rem;color:var(--ink-soft);margin-top:6px}
+  .grid-2{display:grid;grid-template-columns:1fr;gap:0 18px}
+  @media(min-width:560px){.grid-2{grid-template-columns:1fr 1fr}}
+  .with-prefix{position:relative}
+  .with-prefix span.pfx{position:absolute;left:14px;top:50%;transform:translateY(-50%);font-weight:700;color:var(--ink-soft)}
+  .with-prefix input{padding-left:46px}
+
+  .field.error input,.field.error select{border-color:#d23b22;background:#fff7f5}
+  .err-msg{display:none;color:#b8341f;font-size:.9rem;font-weight:700;margin-top:6px}
+  .field.error .err-msg{display:block}
+
+  .consent{display:flex;gap:14px;align-items:flex-start;background:#fff;border:2px solid var(--line);border-radius:12px;padding:16px 18px;margin:6px 0 8px;cursor:pointer}
+  .consent.error{border-color:#d23b22;background:#fff7f5}
+  .consent input{width:26px;height:26px;flex:0 0 auto;margin-top:2px;accent-color:var(--green-soft);cursor:pointer}
+  .consent span{font-size:.96rem;color:var(--ink-soft);line-height:1.5}
+  #consentErr{display:none;color:#b8341f;font-weight:700;font-size:.92rem;margin:4px 0 12px}
+  #consentErr.show{display:block}
+
+  /* Resultado calculadora */
+  .calc-result{display:none;margin-top:8px}
+  .calc-result.show{display:block;animation:fade .4s ease}
+  .estimate-box{background:linear-gradient(150deg,var(--navy),var(--green));color:#fff;border-radius:16px;padding:26px 24px;text-align:center;margin-bottom:18px}
+  .estimate-box .lbl{font-family:"Segoe UI",sans-serif;font-size:.9rem;letter-spacing:1px;text-transform:uppercase;color:var(--gold-light);font-weight:800}
+  .estimate-box .val{font-family:Georgia,serif;font-size:2.6rem;font-weight:700;margin:6px 0;line-height:1.1}
+  @media(min-width:768px){.estimate-box .val{font-size:3.1rem}}
+  .estimate-box .band{display:inline-block;margin-top:8px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.3);padding:6px 16px;border-radius:50px;font-weight:700;font-size:.95rem}
+  .calc-disc{font-size:.9rem;color:var(--ink-soft);text-align:center;line-height:1.55;margin-bottom:20px}
+
+  /* ============ COMO FUNCIONA ============ */
+  .how{background:var(--paper)}
+  .steps{display:grid;grid-template-columns:1fr;gap:22px}
+  @media(min-width:820px){.steps{grid-template-columns:repeat(3,1fr)}}
+  .step{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:32px 26px 28px;box-shadow:var(--shadow-sm);position:relative;text-align:center}
+  .step .n{position:absolute;top:-18px;left:50%;transform:translateX(-50%);width:44px;height:44px;border-radius:50%;background:linear-gradient(180deg,var(--gold-light),var(--gold));color:var(--navy-deep);display:grid;place-items:center;font-family:Georgia,serif;font-weight:700;font-size:1.15rem;box-shadow:var(--shadow-sm)}
+  .step .ic{width:62px;height:62px;margin:14px auto 16px;background:var(--navy);border-radius:16px;display:grid;place-items:center}
+  .step .ic svg{width:30px;height:30px;stroke:var(--gold-light);fill:none;stroke-width:1.8}
+  .step h3{margin-bottom:8px;font-size:1.2rem}
+  .step p{color:var(--ink-soft);font-size:1rem}
+
+  /* ============ CREDIBILIDADE ============ */
+  .cred{background:var(--white)}
+  .cred-grid{display:grid;grid-template-columns:1fr;gap:14px;margin-bottom:28px}
+  @media(min-width:600px){.cred-grid{grid-template-columns:repeat(2,1fr)}}
+  @media(min-width:980px){.cred-grid{grid-template-columns:repeat(3,1fr)}}
+  .cred-item{display:flex;align-items:center;gap:14px;background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:18px 20px;font-weight:700;color:var(--navy);font-size:1.04rem}
+  .cred-item .ck{width:32px;height:32px;flex:0 0 auto;background:var(--green-soft);border-radius:8px;display:grid;place-items:center}
+  .cred-item .ck svg{width:18px;height:18px;fill:#fff}
+  .cred-note{max-width:var(--read);margin:0 auto;text-align:center;color:var(--ink-soft);background:var(--paper);border-top:4px solid var(--green-soft);border-radius:12px;padding:22px 26px;font-size:1.05rem}
+
+  /* ============ FAQ ============ */
+  .faq{background:var(--paper)}
+  .faq-list{max-width:var(--read);margin:0 auto}
+  .faq-item{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:13px;overflow:hidden;box-shadow:var(--shadow-sm)}
+  .faq-q{width:100%;text-align:left;background:none;border:none;cursor:pointer;padding:21px 22px;font-family:Georgia,serif;font-size:1.12rem;font-weight:700;color:var(--navy);display:flex;align-items:center;justify-content:space-between;gap:16px;line-height:1.4}
+  .faq-q:hover{color:var(--green-soft)}
+  .faq-q .arw{flex:0 0 auto;width:24px;height:24px;transition:transform .3s ease;fill:var(--gold)}
+  .faq-q[aria-expanded="true"] .arw{transform:rotate(180deg)}
+  .faq-a{max-height:0;overflow:hidden;transition:max-height .35s ease}
+  .faq-a .in{padding:0 22px 20px;color:var(--ink-soft);font-size:1.04rem}
+
+  /* ============ CHAMADA FINAL ============ */
+  .final{background:radial-gradient(800px 360px at 18% 0%,rgba(189,149,64,.2),transparent 60%),linear-gradient(150deg,var(--green) 0%,var(--navy-deep) 70%,var(--navy) 100%);color:#fff;text-align:center}
+  .final h2{color:#fff;max-width:20ch;margin:0 auto 16px;font-size:1.8rem}
+  @media(min-width:768px){.final h2{font-size:2.4rem}}
+  .final p{color:#dbe5f0;max-width:56ch;margin:0 auto 30px;font-size:1.12rem}
+  .final .btn{font-size:1.22rem;padding:21px 40px}
+  .final .fn{margin-top:16px;font-size:.92rem;color:#b9c6d6}
+
+  /* ============ FOOTER ============ */
+  footer{background:var(--navy-deep);color:#c7d2e0;padding:50px 0 120px;font-size:.96rem}
+  @media(min-width:768px){footer{padding-bottom:60px}}
+  .foot-grid{display:grid;grid-template-columns:1fr;gap:30px}
+  @media(min-width:860px){.foot-grid{grid-template-columns:1.25fr 1fr;gap:48px}}
+  .foot-brand h3{color:#fff;font-size:1.18rem;margin-bottom:4px}
+  .foot-brand .pro{font-family:"Segoe UI",sans-serif;color:#fff;font-weight:600;margin-bottom:2px}
+  .foot-brand .oab{color:var(--gold-light);font-weight:700;margin-bottom:14px}
+  .foot-contact p{margin-bottom:7px}
+  .foot-contact strong{color:#fff}
+  .foot-contact a{color:var(--gold-light);text-decoration:none}
+  .foot-contact a:hover{text-decoration:underline}
+  .compliance{background:rgba(255,255,255,.05);border:1px solid rgba(255,255,255,.1);border-radius:12px;padding:20px 22px;color:#aab9cb;font-size:.9rem;line-height:1.6}
+  .compliance p+p{margin-top:10px}
+  .foot-bottom{border-top:1px solid rgba(255,255,255,.12);margin-top:34px;padding-top:20px;text-align:center;color:#8a99ab;font-size:.86rem}
+
+  /* ============ WHATSAPP FLUTUANTE ============ */
+  .wa-float{position:fixed;right:18px;bottom:18px;z-index:200;display:inline-flex;align-items:center;gap:10px;background:linear-gradient(180deg,#2ab348,#1e9c3b);color:#fff;text-decoration:none;font-family:"Segoe UI",sans-serif;font-weight:800;padding:14px 20px 14px 16px;border-radius:50px;box-shadow:0 10px 28px rgba(0,0,0,.3);animation:pulse 2.6s infinite}
+  .wa-float svg{width:30px;height:30px;fill:#fff}
+  @media(max-width:520px){.wa-float .t{display:none}.wa-float{padding:16px}}
+  @keyframes pulse{0%{box-shadow:0 10px 28px rgba(0,0,0,.3),0 0 0 0 rgba(42,179,72,.5)}70%{box-shadow:0 10px 28px rgba(0,0,0,.3),0 0 0 16px rgba(42,179,72,0)}100%{box-shadow:0 10px 28px rgba(0,0,0,.3),0 0 0 0 rgba(42,179,72,0)}}
+
+  @media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
 </style>
 </head>
 <body>
 
-<a class="skip-link" href="#conteudo">Ir para o conteúdo principal</a>
+<a class="skip-link" href="#inicio">Ir para o conteúdo principal</a>
 
-<!-- ===================== HERO ===================== -->
-<header class="hero" id="conteudo">
-  <div class="container">
-    <span class="hero-badge">
-      <svg class="wa-icon" width="18" height="18" viewBox="0 0 24 24" aria-hidden="true" style="fill:currentColor"><path d="M12 2a10 10 0 0 0-8.94 14.46L2 22l5.7-1.5A10 10 0 1 0 12 2Zm5.1 14.13c-.22.62-1.28 1.18-1.77 1.22-.47.05-.9.22-3.06-.64-2.57-1.01-4.2-3.66-4.33-3.83-.13-.18-1.05-1.4-1.05-2.66s.66-1.9.9-2.16c.23-.26.5-.32.67-.32l.48.01c.16.01.37-.06.58.44.22.53.73 1.84.8 1.97.06.13.1.29.02.46-.36.74-.74 1.02-.39 1.62.7 1.2 1.48 1.65 2.43 2.13.16.08.36.06.49-.08.18-.2.56-.66.71-.88.15-.22.3-.18.5-.11.2.07 1.3.61 1.52.72.22.11.37.16.42.26.06.09.06.52-.16 1.14Z"/></svg>
-      Verificação inicial gratuita
-    </span>
+<div class="topbar">⚖️ <strong>Atendimento digital em todo o Brasil</strong> · Conteúdo meramente informativo</div>
 
-    <h1>Militar Inativo, Reformado ou da Reserva?<br><span class="accent">Você pode ter direito à Isenção do Imposto de Renda.</span></h1>
+<!-- ============ NAV (cara de blogue) ============ -->
+<header class="site">
+  <nav class="nav" aria-label="Navegação principal">
+    <a class="brand" href="#inicio" aria-label="Início — Fábia Borges Advocacia">
+      <span class="mono" aria-hidden="true">FB</span>
+      <span class="bn">Fábia Borges<small>Sociedade Individual de Advocacia</small></span>
+    </a>
+    <div class="nav-links">
+      <a href="#direito">Quem tem direito</a>
+      <a href="#verificacao">Verificação</a>
+      <a href="#estimativa">Estimativa</a>
+      <a href="#duvidas">Dúvidas</a>
+    </div>
+    <a class="btn btn-wa nav-cta" style="padding:11px 20px;min-height:46px;font-size:1rem" href="https://wa.me/5521967067127?text=Ol%C3%A1%2C%20sou%20militar%20inativo%20e%20gostaria%20de%20verificar%20se%20tenho%20direito%20%C3%A0%20isen%C3%A7%C3%A3o%20do%20Imposto%20de%20Renda." target="_blank" rel="noopener">
+      <svg class="wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.94 14.46L2 22l5.7-1.5A10 10 0 1 0 12 2Zm5.1 14.13c-.22.62-1.28 1.18-1.77 1.22-.47.05-.9.22-3.06-.64-2.57-1.01-4.2-3.66-4.33-3.83-.13-.18-1.05-1.4-1.05-2.66s.66-1.9.9-2.16c.23-.26.5-.32.67-.32l.48.01c.16.01.37-.06.58.44.22.53.73 1.84.8 1.97.06.13.1.29.02.46-.36.74-.74 1.02-.39 1.62.7 1.2 1.48 1.65 2.43 2.13.16.08.36.06.49-.08.18-.2.56-.66.71-.88.15-.22.3-.18.5-.11.2.07 1.3.61 1.52.72.22.11.37.16.42.26.06.09.06.52-.16 1.14Z"/></svg>
+      WhatsApp
+    </a>
+  </nav>
+</header>
+
+<!-- ============ HERO ============ -->
+<main id="inicio">
+<section class="hero" aria-labelledby="hero-title">
+  <div class="container read" style="max-width:880px">
+    <div class="post-tags">
+      <span class="tag navy">Direito Militar</span>
+      <span class="tag gold">Isenção de IR</span>
+      <span class="tag green">Guia informativo</span>
+    </div>
+
+    <h1 id="hero-title">Militar Inativo, Reformado ou da Reserva? <span class="hl">O Sr. ou a Sra. pode ter direito à Isenção do Imposto de Renda.</span></h1>
 
     <p class="hero-sub">A legislação prevê hipóteses específicas de isenção para militares que possuem determinadas condições de saúde. Faça uma verificação inicial gratuita e descubra se vale a pena analisar o seu caso.</p>
 
-    <div class="hero-cta-row">
-      <a class="btn btn-gold" href="https://wa.me/5521967067127?text=Olá,%20sou%20militar%20inativo%20e%20gostaria%20de%20verificar%20se%20tenho%20direito%20à%20isenção%20do%20Imposto%20de%20Renda." target="_blank" rel="noopener" aria-label="Verificar meu direito agora pelo WhatsApp">
-        <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.94 14.46L2 22l5.7-1.5A10 10 0 1 0 12 2Zm5.1 14.13c-.22.62-1.28 1.18-1.77 1.22-.47.05-.9.22-3.06-.64-2.57-1.01-4.2-3.66-4.33-3.83-.13-.18-1.05-1.4-1.05-2.66s.66-1.9.9-2.16c.23-.26.5-.32.67-.32l.48.01c.16.01.37-.06.58.44.22.53.73 1.84.8 1.97.06.13.1.29.02.46-.36.74-.74 1.02-.39 1.62.7 1.2 1.48 1.65 2.43 2.13.16.08.36.06.49-.08.18-.2.56-.66.71-.88.15-.22.3-.18.5-.11.2.07 1.3.61 1.52.72.22.11.37.16.42.26.06.09.06.52-.16 1.14Z"/></svg>
-        Verificar Meu Direito Agora
+    <div class="byline">
+      <span class="av" aria-hidden="true">FB</span>
+      <span class="meta">
+        <strong>Por Fábia Adilina Cordeiro Borges</strong>
+        OAB/BA 88.678 · OAB/RJ 180.383 <span class="dot">•</span> Leitura de 4 min <span class="dot">•</span> Atualizado em 2026
+      </span>
+    </div>
+
+    <div class="hero-cta">
+      <a class="btn btn-gold" href="#verificacao">Verificar Meu Direito Agora</a>
+      <a class="btn btn-ghost" href="https://wa.me/5521967067127?text=Ol%C3%A1%2C%20sou%20militar%20inativo%20e%20gostaria%20de%20verificar%20se%20tenho%20direito%20%C3%A0%20isen%C3%A7%C3%A3o%20do%20Imposto%20de%20Renda." target="_blank" rel="noopener">
+        <svg class="wa" viewBox="0 0 24 24" aria-hidden="true" style="width:22px;height:22px;fill:#1e9c3b"><path d="M12 2a10 10 0 0 0-8.94 14.46L2 22l5.7-1.5A10 10 0 1 0 12 2Zm5.1 14.13c-.22.62-1.28 1.18-1.77 1.22-.47.05-.9.22-3.06-.64-2.57-1.01-4.2-3.66-4.33-3.83-.13-.18-1.05-1.4-1.05-2.66s.66-1.9.9-2.16c.23-.26.5-.32.67-.32l.48.01c.16.01.37-.06.58.44.22.53.73 1.84.8 1.97.06.13.1.29.02.46-.36.74-.74 1.02-.39 1.62.7 1.2 1.48 1.65 2.43 2.13.16.08.36.06.49-.08.18-.2.56-.66.71-.88.15-.22.3-.18.5-.11.2.07 1.3.61 1.52.72.22.11.37.16.42.26.06.09.06.52-.16 1.14Z"/></svg>
+        Falar pelo WhatsApp
       </a>
-      <a class="btn btn-outline" href="#verificacao">Fazer a verificação online</a>
     </div>
-
-    <p class="hero-note">Sem compromisso. A verificação inicial tem caráter informativo e não constitui promessa de resultado.</p>
-
-    <div class="trust-row">
-      <div class="trust-item">
-        <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9 9 0 0 0-9 9c0 5 9 11 9 11s9-6 9-11a9 9 0 0 0-9-9Zm0 12.5A3.5 3.5 0 1 1 12 7.5a3.5 3.5 0 0 1 0 7Z"/></svg></span>
-        Atendimento digital em todo o Brasil
-      </div>
-      <div class="trust-item">
-        <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1 3 5v6c0 5 3.8 9.7 9 11 5.2-1.3 9-6 9-11V5l-9-4Zm-1.2 14.5-3.3-3.3 1.4-1.4 1.9 1.9 4.9-4.9 1.4 1.4-6.3 6.3Z"/></svg></span>
-        Análise individualizada
-      </div>
-      <div class="trust-item">
-        <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1 3 5v6c0 5 3.8 9.7 9 11 5.2-1.3 9-6 9-11V5l-9-4Z"/></svg></span>
-        Orientação com segurança e transparência
-      </div>
-    </div>
+    <p class="hero-note">Sem compromisso. Verificação inicial de caráter informativo — não constitui promessa de resultado.</p>
   </div>
-</header>
+</section>
 
-<main>
-
-<!-- ===================== QUEM PODE TER DIREITO ===================== -->
-<section class="who" aria-labelledby="who-title">
+<!-- ============ TRUST STRIP ============ -->
+<section class="trust" style="padding:0" aria-label="Diferenciais">
   <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Quem pode verificar</span>
-      <h2 id="who-title">O Sr. se enquadra em alguma destas situações?</h2>
-      <p class="lead">A isenção pode ser aplicável, conforme análise individual de cada caso, aos militares e situações abaixo:</p>
+    <div class="trust-item"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a9 9 0 0 0-9 9c0 5 9 11 9 11s9-6 9-11a9 9 0 0 0-9-9Zm0 12.5A3.5 3.5 0 1 1 12 7.5a3.5 3.5 0 0 1 0 7Z"/></svg></span>Atendimento digital em todo o Brasil</div>
+    <div class="trust-item"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1 3 5v6c0 5 3.8 9.7 9 11 5.2-1.3 9-6 9-11V5l-9-4Zm-1.2 14.5-3.3-3.3 1.4-1.4 1.9 1.9 4.9-4.9 1.4 1.4-6.3 6.3Z"/></svg></span>Análise individualizada</div>
+    <div class="trust-item"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 1 3 5v6c0 5 3.8 9.7 9 11 5.2-1.3 9-6 9-11V5l-9-4Z"/></svg></span>Orientação com segurança e transparência</div>
+  </div>
+</section>
+
+<!-- ============ QUEM PODE TER DIREITO ============ -->
+<section class="who" id="direito" aria-labelledby="who-title">
+  <div class="container">
+    <div class="read" style="max-width:820px">
+      <span class="kicker">Entenda o tema</span>
+      <h2 class="title" id="who-title">Quem pode ter direito?</h2>
+      <p class="section-intro">A isenção pode ser aplicável, conforme análise individual de cada caso, aos militares e situações abaixo. A presença de uma dessas condições indica apenas a <strong>possibilidade de verificação</strong> — não a confirmação automática de um direito.</p>
     </div>
 
     <div class="pill-grid">
-      <div class="pill-card"><span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>Militares reformados</div>
-      <div class="pill-card"><span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>Militares da reserva remunerada</div>
-      <div class="pill-card"><span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>Militares inativos</div>
-      <div class="pill-card"><span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>Portadores de doenças graves previstas em lei</div>
-      <div class="pill-card"><span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>Casos relacionados a acidente em serviço</div>
-      <div class="pill-card"><span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>Casos relacionados a moléstia profissional</div>
+      <div class="pill"><span class="ck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>Militares reformados</div>
+      <div class="pill"><span class="ck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>Militares da reserva remunerada</div>
+      <div class="pill"><span class="ck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>Militares inativos</div>
+      <div class="pill"><span class="ck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>Portadores de doenças graves previstas em lei</div>
+      <div class="pill"><span class="ck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>Casos relacionados a acidente em serviço</div>
+      <div class="pill"><span class="ck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>Casos relacionados a moléstia profissional</div>
     </div>
 
-    <div class="note-box">
-      <strong>Importante:</strong> cada caso depende da documentação médica, da situação funcional e da análise concreta. A presença de uma dessas condições indica apenas a <em>possibilidade</em> de verificação — não a confirmação automática de um direito.
-    </div>
-
-    <div class="subhead">
-      <h3>Exemplos de doenças e condições previstas na legislação</h3>
-      <p>A lei relaciona condições de saúde que podem ensejar a análise da isenção, entre elas:</p>
+    <div class="read" style="max-width:820px">
+      <p class="section-intro" style="margin-bottom:20px">Cada caso depende da documentação médica, da situação funcional, dos descontos realizados e da análise concreta. Veja exemplos de condições que <strong>podem</strong> estar previstas na legislação:</p>
     </div>
 
     <div class="disease-grid">
-      <div class="disease-card">
-        <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.35-7-10a4 4 0 0 1 7-2.65A4 4 0 0 1 19 11c0 5.65-7 10-7 10Z"/></svg></span>
-        <strong>Câncer</strong><small>(neoplasia maligna)</small>
-      </div>
-      <div class="disease-card">
-        <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l2-5 3 9 2-4h7"/></svg></span>
-        <strong>Cardiopatia grave</strong>
-      </div>
-      <div class="disease-card">
-        <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M6 21c0-3.3 2.7-6 6-6s6 2.7 6 6"/></svg></span>
-        <strong>Doença de Parkinson</strong>
-      </div>
-      <div class="disease-card">
-        <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3a4 4 0 0 0-4 4 3 3 0 0 0-1 5 3 3 0 0 0 2 5 3 3 0 0 0 5 1 3 3 0 0 0 5-1 3 3 0 0 0 2-5 3 3 0 0 0-1-5 4 4 0 0 0-4-4 3 3 0 0 0-5 0Z"/></svg></span>
-        <strong>Esclerose múltipla</strong>
-      </div>
-      <div class="disease-card">
-        <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></span>
-        <strong>Cegueira</strong>
-      </div>
-      <div class="disease-card">
-        <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3c-2 2-3 4-3 7a5 5 0 0 0 10 0c0-3-1-5-3-7-1 1.5-1 3-1 3s-1-1.5-3-3Z"/></svg></span>
-        <strong>Nefropatia grave</strong><small>(rins)</small>
-      </div>
-      <div class="disease-card">
-        <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6c4-2 12-2 16 0 0 6-2 11-8 13C6 17 4 12 4 6Z"/></svg></span>
-        <strong>Hepatopatia grave</strong><small>(fígado)</small>
-      </div>
-      <div class="disease-card">
-        <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6 6 0 0 0-6 6c0 2 1 3 1 5h10c0-2 1-3 1-5a6 6 0 0 0-6-6Z"/><path d="M9 18h6M10 21h4"/></svg></span>
-        <strong>Alienação mental</strong>
-      </div>
-      <div class="disease-card">
-        <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span>
-        <strong>AIDS</strong>
-      </div>
-      <div class="disease-card">
-        <span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span>
-        <strong>Outras hipóteses</strong><small>legalmente previstas</small>
+      <div class="disease"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.35-7-10a4 4 0 0 1 7-2.65A4 4 0 0 1 19 11c0 5.65-7 10-7 10Z"/></svg></span><strong>Câncer</strong><small>(neoplasia maligna)</small></div>
+      <div class="disease"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12h4l2-5 3 9 2-4h7"/></svg></span><strong>Cardiopatia grave</strong></div>
+      <div class="disease"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="4"/><path d="M6 21c0-3.3 2.7-6 6-6s6 2.7 6 6"/></svg></span><strong>Doença de Parkinson</strong></div>
+      <div class="disease"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 3a4 4 0 0 0-4 4 3 3 0 0 0-1 5 3 3 0 0 0 2 5 3 3 0 0 0 5 1 3 3 0 0 0 5-1 3 3 0 0 0 2-5 3 3 0 0 0-1-5 4 4 0 0 0-4-4 3 3 0 0 0-5 0Z"/></svg></span><strong>Esclerose múltipla</strong></div>
+      <div class="disease"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M2 12s4-7 10-7 10 7 10 7-4 7-10 7S2 12 2 12Z"/><circle cx="12" cy="12" r="3"/></svg></span><strong>Cegueira</strong></div>
+      <div class="disease"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 3c-2 2-3 4-3 7a5 5 0 0 0 10 0c0-3-1-5-3-7-1 1.5-1 3-1 3s-1-1.5-3-3Z"/></svg></span><strong>Nefropatia grave</strong><small>(rins)</small></div>
+      <div class="disease"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6c4-2 12-2 16 0 0 6-2 11-8 13C6 17 4 12 4 6Z"/></svg></span><strong>Hepatopatia grave</strong><small>(fígado)</small></div>
+      <div class="disease"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a6 6 0 0 0-6 6c0 2 1 3 1 5h10c0-2 1-3 1-5a6 6 0 0 0-6-6Z"/><path d="M9 18h6M10 21h4"/></svg></span><strong>Alienação mental</strong></div>
+      <div class="disease"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><strong>AIDS</strong></div>
+      <div class="disease"><span class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5v14M5 12h14"/></svg></span><strong>Outras hipóteses</strong><small>legalmente previstas</small></div>
+    </div>
+
+    <div class="read" style="max-width:820px">
+      <div class="notice">
+        <span class="bang">!</span>
+        <p>A existência de uma condição de saúde não significa, por si só, reconhecimento automático do direito. A análise depende dos documentos e das circunstâncias de cada caso.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== QUESTIONÁRIO ===================== -->
-<section class="quiz" id="verificacao" aria-labelledby="quiz-title">
+<!-- ============ VERIFICAÇÃO ONLINE (QUIZ) ============ -->
+<section class="verify" id="verificacao" aria-labelledby="verify-title">
   <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Ferramenta gratuita</span>
-      <h2 id="quiz-title">Verifique Sua Possibilidade</h2>
-      <p>Toque em <strong>Começar</strong> e responda a 5 perguntas rápidas, uma de cada vez. É só tocar em <strong>Sim</strong> ou <strong>Não</strong> — nós avançamos sozinhos para a próxima. No final, o Sr. (ou a Sra.) recebe uma orientação. Gratuito e leva menos de 1 minuto.</p>
+    <div class="read" style="text-align:center;max-width:720px">
+      <span class="kicker on-dark">Ferramenta gratuita</span>
+      <h2 class="title" id="verify-title">Verificação Online</h2>
+      <p class="section-intro">Responda com calma. A verificação leva menos de 2 minutos e tem caráter apenas informativo.</p>
     </div>
 
-    <div class="quiz-card">
-      <div class="quiz-topbar">
-        <span class="quiz-step-label" id="stepLabel">Vamos começar</span>
-        <div class="quiz-dots" id="quizDots" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></div>
+    <div class="widget">
+      <!-- topo: progresso -->
+      <div class="quiz-top" id="quizTop" hidden>
+        <div class="quiz-stepname">
+          <span id="stepLabel">Etapa 1 de 7</span>
+          <span class="dots" id="dots" aria-hidden="true"></span>
+        </div>
+        <div class="bar" role="progressbar" aria-valuemin="0" aria-valuemax="7" aria-valuenow="0" aria-label="Progresso da verificação"><span id="bar"></span></div>
       </div>
-      <div class="quiz-progress" role="progressbar" aria-valuemin="0" aria-valuemax="5" aria-valuenow="0" aria-label="Progresso da verificação">
-        <span id="progressBar"></span>
-      </div>
 
-      <div class="quiz-steps" id="quizSteps">
-
-        <!-- Passo de abertura -->
-        <div class="quiz-step active" data-step="0">
-          <div class="quiz-intro">
-            <div class="big-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 5 6v5c0 5 3 8.5 7 10 4-1.5 7-5 7-10V6l-7-3Z"/><path d="M9 12l2 2 4-4" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
-            <h3>Verificação em 5 perguntas rápidas</h3>
-            <p>O Sr. (ou a Sra.) responde tocando em <strong>“Sim”</strong> ou <strong>“Não”</strong>. A cada resposta, avançamos sozinhos para a próxima pergunta. No final, mostramos uma orientação.</p>
-            <div class="mini-feats">
-              <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Gratuito</span>
-              <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Sem compromisso</span>
-              <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>Leva 1 minuto</span>
-            </div>
-            <button type="button" class="btn btn-gold quiz-start-btn" id="startBtn">Começar a verificação</button>
-          </div>
+      <div class="quiz-body">
+        <!-- INTRO -->
+        <div class="quiz-panel on" id="panelIntro">
+          <div class="quiz-intro-ic" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
+          <h3 class="quiz-q">Vamos começar com uma pergunta simples.</h3>
+          <p class="quiz-help">Responda da forma que souber. Se tiver dúvida, escolha “Não sei informar”. São 7 perguntas rápidas e, no final, o Sr. ou a Sra. recebe uma orientação inicial.</p>
+          <button type="button" class="btn btn-navy btn-block" id="startBtn">Começar a verificação</button>
         </div>
 
-        <!-- Pergunta 1 -->
-        <div class="quiz-step" data-step="1" role="group" aria-labelledby="qtext1">
-          <span class="q-counter">Pergunta 1 de 5</span>
-          <p class="q-text" id="qtext1">O Sr. é militar reformado, da reserva remunerada ou inativo?</p>
-          <div class="q-options">
-            <button type="button" class="opt-btn opt-sim" data-q="1" data-val="sim" aria-pressed="false">
-              <span class="opt-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span> Sim
-            </button>
-            <button type="button" class="opt-btn opt-nao" data-q="1" data-val="nao" aria-pressed="false">
-              <span class="opt-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.3 5.71 12 12l-6.3-6.29-1.41 1.41L10.59 13l-6.3 6.29 1.41 1.42L12 14.41l6.3 6.3 1.41-1.42-6.3-6.29 6.3-6.29z"/></svg></span> Não
-            </button>
-          </div>
+        <!-- PERGUNTAS (preenchidas via JS) -->
+        <div class="quiz-panel" id="panelQuestion">
+          <h3 class="quiz-q" id="qText"></h3>
+          <p class="quiz-help" id="qHelp">Toque na opção que melhor representa a sua situação.</p>
+          <div class="opts" id="qOpts" role="group" aria-labelledby="qText"></div>
           <div class="quiz-nav">
-            <button type="button" class="nav-back" data-back><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.4 7.4 14 6l-6 6 6 6 1.4-1.4-4.6-4.6z"/></svg> Voltar</button>
-            <span class="nav-hint">Toque em uma opção para avançar</span>
+            <button type="button" class="lnk" id="backBtn">‹ Voltar</button>
+            <span class="quiz-help" style="margin:0" id="navHint">Toque em uma opção para avançar</span>
           </div>
         </div>
 
-        <!-- Pergunta 2 -->
-        <div class="quiz-step" data-step="2" role="group" aria-labelledby="qtext2">
-          <span class="q-counter">Pergunta 2 de 5</span>
-          <p class="q-text" id="qtext2">Possui diagnóstico de alguma doença grave ou condição de saúde relevante?</p>
-          <div class="q-options">
-            <button type="button" class="opt-btn opt-sim" data-q="2" data-val="sim" aria-pressed="false">
-              <span class="opt-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span> Sim
-            </button>
-            <button type="button" class="opt-btn opt-nao" data-q="2" data-val="nao" aria-pressed="false">
-              <span class="opt-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.3 5.71 12 12l-6.3-6.29-1.41 1.41L10.59 13l-6.3 6.29 1.41 1.42L12 14.41l6.3 6.3 1.41-1.42-6.3-6.29 6.3-6.29z"/></svg></span> Não
-            </button>
-          </div>
-          <div class="quiz-nav">
-            <button type="button" class="nav-back" data-back><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.4 7.4 14 6l-6 6 6 6 1.4-1.4-4.6-4.6z"/></svg> Voltar</button>
-            <span class="nav-hint">Toque em uma opção para avançar</span>
-          </div>
-        </div>
-
-        <!-- Pergunta 3 -->
-        <div class="quiz-step" data-step="3" role="group" aria-labelledby="qtext3">
-          <span class="q-counter">Pergunta 3 de 5</span>
-          <p class="q-text" id="qtext3">Possui laudos médicos, exames ou relatórios?</p>
-          <div class="q-options">
-            <button type="button" class="opt-btn opt-sim" data-q="3" data-val="sim" aria-pressed="false">
-              <span class="opt-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span> Sim
-            </button>
-            <button type="button" class="opt-btn opt-nao" data-q="3" data-val="nao" aria-pressed="false">
-              <span class="opt-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.3 5.71 12 12l-6.3-6.29-1.41 1.41L10.59 13l-6.3 6.29 1.41 1.42L12 14.41l6.3 6.3 1.41-1.42-6.3-6.29 6.3-6.29z"/></svg></span> Não
-            </button>
-          </div>
-          <div class="quiz-nav">
-            <button type="button" class="nav-back" data-back><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.4 7.4 14 6l-6 6 6 6 1.4-1.4-4.6-4.6z"/></svg> Voltar</button>
-            <span class="nav-hint">Toque em uma opção para avançar</span>
-          </div>
-        </div>
-
-        <!-- Pergunta 4 -->
-        <div class="quiz-step" data-step="4" role="group" aria-labelledby="qtext4">
-          <span class="q-counter">Pergunta 4 de 5</span>
-          <p class="q-text" id="qtext4">Há desconto de Imposto de Renda em seus proventos?</p>
-          <div class="q-options">
-            <button type="button" class="opt-btn opt-sim" data-q="4" data-val="sim" aria-pressed="false">
-              <span class="opt-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span> Sim
-            </button>
-            <button type="button" class="opt-btn opt-nao" data-q="4" data-val="nao" aria-pressed="false">
-              <span class="opt-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.3 5.71 12 12l-6.3-6.29-1.41 1.41L10.59 13l-6.3 6.29 1.41 1.42L12 14.41l6.3 6.3 1.41-1.42-6.3-6.29 6.3-6.29z"/></svg></span> Não
-            </button>
-          </div>
-          <div class="quiz-nav">
-            <button type="button" class="nav-back" data-back><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.4 7.4 14 6l-6 6 6 6 1.4-1.4-4.6-4.6z"/></svg> Voltar</button>
-            <span class="nav-hint">Toque em uma opção para avançar</span>
-          </div>
-        </div>
-
-        <!-- Pergunta 5 -->
-        <div class="quiz-step" data-step="5" role="group" aria-labelledby="qtext5">
-          <span class="q-counter">Pergunta 5 de 5</span>
-          <p class="q-text" id="qtext5">Gostaria de verificar se existe possibilidade de solicitar isenção e eventual restituição de valores?</p>
-          <div class="q-options">
-            <button type="button" class="opt-btn opt-sim" data-q="5" data-val="sim" aria-pressed="false">
-              <span class="opt-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span> Sim
-            </button>
-            <button type="button" class="opt-btn opt-nao" data-q="5" data-val="nao" aria-pressed="false">
-              <span class="opt-ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.3 5.71 12 12l-6.3-6.29-1.41 1.41L10.59 13l-6.3 6.29 1.41 1.42L12 14.41l6.3 6.3 1.41-1.42-6.3-6.29 6.3-6.29z"/></svg></span> Não
-            </button>
-          </div>
-          <div class="quiz-nav">
-            <button type="button" class="nav-back" data-back><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15.4 7.4 14 6l-6 6 6 6 1.4-1.4-4.6-4.6z"/></svg> Voltar</button>
-            <span class="nav-hint">Toque em uma opção para ver o resultado</span>
-          </div>
-        </div>
-
-        <!-- Resultado -->
-        <div class="quiz-step" data-step="result" role="region" aria-live="polite" tabindex="-1">
-          <div class="quiz-result-inner">
-            <div class="result-icon" id="resultIcon">
-              <svg viewBox="0 0 24 24" aria-hidden="true" id="resultSvg"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg>
-            </div>
-            <h3 id="resultTitle"></h3>
-            <p id="resultText"></p>
-            <a class="btn btn-whatsapp" id="resultBtn" href="#" target="_blank" rel="noopener">
-              <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.94 14.46L2 22l5.7-1.5A10 10 0 1 0 12 2Zm5.1 14.13c-.22.62-1.28 1.18-1.77 1.22-.47.05-.9.22-3.06-.64-2.57-1.01-4.2-3.66-4.33-3.83-.13-.18-1.05-1.4-1.05-2.66s.66-1.9.9-2.16c.23-.26.5-.32.67-.32l.48.01c.16.01.37-.06.58.44.22.53.73 1.84.8 1.97.06.13.1.29.02.46-.36.74-.74 1.02-.39 1.62.7 1.2 1.48 1.65 2.43 2.13.16.08.36.06.49-.08.18-.2.56-.66.71-.88.15-.22.3-.18.5-.11.2.07 1.3.61 1.52.72.22.11.37.16.42.26.06.09.06.52-.16 1.14Z"/></svg>
-              <span id="resultBtnLabel">Falar com um Especialista</span>
+        <!-- RESULTADO -->
+        <div class="quiz-panel" id="quizResult" tabindex="-1" aria-live="polite">
+          <div class="result-ic s3" id="resIc" aria-hidden="true"><svg viewBox="0 0 24 24" id="resSvg"><path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+          <h3 id="resTitle"></h3>
+          <p class="msg" id="resMsg"></p>
+          <div class="result-actions">
+            <a class="btn btn-wa btn-block" id="resWa" href="#" target="_blank" rel="noopener">
+              <svg class="wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.94 14.46L2 22l5.7-1.5A10 10 0 1 0 12 2Zm5.1 14.13c-.22.62-1.28 1.18-1.77 1.22-.47.05-.9.22-3.06-.64-2.57-1.01-4.2-3.66-4.33-3.83-.13-.18-1.05-1.4-1.05-2.66s.66-1.9.9-2.16c.23-.26.5-.32.67-.32l.48.01c.16.01.37-.06.58.44.22.53.73 1.84.8 1.97.06.13.1.29.02.46-.36.74-.74 1.02-.39 1.62.7 1.2 1.48 1.65 2.43 2.13.16.08.36.06.49-.08.18-.2.56-.66.71-.88.15-.22.3-.18.5-.11.2.07 1.3.61 1.52.72.22.11.37.16.42.26.06.09.06.52-.16 1.14Z"/></svg>
+              <span id="resWaLabel">Falar com um Especialista</span>
             </a>
-            <p class="disclaimer-mini">Este resultado indica apenas a <strong>possibilidade de análise</strong> e não confirma a existência de direito. Cada caso depende dos documentos e das circunstâncias concretas.</p>
-            <button type="button" class="restart-btn" id="restartBtn"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 5V1L7 6l5 5V7a5 5 0 1 1-5 5H5a7 7 0 1 0 7-7z"/></svg> Refazer a verificação</button>
+            <a class="btn btn-gold btn-block" href="#estimativa" id="goCalc">Calcular uma estimativa inicial de possível restituição ›</a>
           </div>
+          <p class="mini-disc">Esta verificação não substitui a análise jurídica individual e <strong>não confirma a existência de direito</strong>. Indica apenas a possibilidade de avaliação. Cada caso depende dos documentos e das circunstâncias concretas.</p>
+          <button type="button" class="restart" id="restartBtn">Refazer a verificação</button>
         </div>
-
       </div>
     </div>
   </div>
 </section>
 
-<!-- ===================== COMO FUNCIONA ===================== -->
+<!-- ============ ESTIMATIVA / CALCULADORA ============ -->
+<section class="calc" id="estimativa" aria-labelledby="calc-title">
+  <div class="container">
+    <div class="read" style="text-align:center;max-width:760px">
+      <span class="kicker">Estimativa informativa</span>
+      <h2 class="title" id="calc-title">Faça uma estimativa inicial dos valores descontados</h2>
+    </div>
+
+    <div class="widget calc-card">
+      <p class="calc-help">Esta ferramenta faz apenas uma estimativa simples com base nas informações fornecidas pelo Sr. ou pela Sra. O valor final depende de análise jurídica, documentos, datas, situação funcional, condição médica e regras aplicáveis ao caso concreto.</p>
+
+      <form id="calcForm" novalidate>
+        <div class="field" id="f-nome">
+          <label for="nome">Nome completo <span class="req">*</span></label>
+          <input type="text" id="nome" name="nome" autocomplete="name" placeholder="Ex.: João da Silva">
+          <span class="err-msg">Por favor, informe o seu nome.</span>
+        </div>
+
+        <div class="grid-2">
+          <div class="field" id="f-whats">
+            <label for="whatsapp">WhatsApp <span class="req">*</span></label>
+            <input type="tel" id="whatsapp" name="whatsapp" inputmode="tel" autocomplete="tel" placeholder="(00) 00000-0000">
+            <span class="err-msg">Informe um WhatsApp para contato.</span>
+          </div>
+          <div class="field" id="f-email">
+            <label for="email">E-mail</label>
+            <input type="email" id="email" name="email" autocomplete="email" placeholder="seuemail@exemplo.com">
+            <span class="err-msg">Verifique o e-mail informado.</span>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="field" id="f-valor">
+            <label for="valor">Valor médio mensal descontado de IR <span class="req">*</span></label>
+            <div class="with-prefix"><span class="pfx">R$</span><input type="text" id="valor" name="valor" inputmode="decimal" placeholder="0,00"></div>
+            <span class="hintline">Valor aproximado que aparece no contracheque.</span>
+            <span class="err-msg">Informe um valor mensal válido.</span>
+          </div>
+          <div class="field" id="f-meses">
+            <label for="meses">Há quantos meses esse desconto ocorre? <span class="req">*</span></label>
+            <input type="number" id="meses" name="meses" inputmode="numeric" min="1" step="1" placeholder="Ex.: 36">
+            <span class="hintline">Some, aproximadamente, os meses com desconto.</span>
+            <span class="err-msg">Informe a quantidade de meses.</span>
+          </div>
+        </div>
+
+        <div class="grid-2">
+          <div class="field" id="f-comp">
+            <label for="comprovantes">Possui comprovantes dos descontos?</label>
+            <select id="comprovantes" name="comprovantes">
+              <option value="Sim">Sim</option>
+              <option value="Alguns">Tenho alguns</option>
+              <option value="Não" selected>Não</option>
+              <option value="Não sei">Não sei informar</option>
+            </select>
+          </div>
+          <div class="field" id="f-laudos">
+            <label for="laudos">Possui laudos ou exames médicos?</label>
+            <select id="laudos" name="laudos">
+              <option value="Sim">Sim</option>
+              <option value="Alguns">Tenho alguns</option>
+              <option value="Não" selected>Não</option>
+              <option value="Não sei">Não sei informar</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="field" id="f-deseja">
+          <label for="deseja">Deseja receber orientação pelo WhatsApp?</label>
+          <select id="deseja" name="deseja">
+            <option value="Sim" selected>Sim, pode entrar em contato</option>
+            <option value="Não">Não, somente a estimativa</option>
+          </select>
+        </div>
+
+        <label class="consent" id="consentBox" for="consent">
+          <input type="checkbox" id="consent" name="consent">
+          <span>Autorizo o uso das informações fornecidas para contato e análise inicial do meu caso, conforme finalidade informada nesta página.</span>
+        </label>
+        <p id="consentErr">Para enviar sua simulação, é necessário autorizar o contato com base nas informações preenchidas.</p>
+
+        <button type="submit" class="btn btn-navy btn-block">Calcular estimativa</button>
+      </form>
+
+      <!-- RESULTADO DA CALCULADORA -->
+      <div class="calc-result" id="calcResult" aria-live="polite" tabindex="-1">
+        <div class="estimate-box">
+          <div class="lbl">Estimativa bruta informativa</div>
+          <div class="val" id="estVal">R$ 0,00</div>
+          <div class="band" id="estBand">—</div>
+        </div>
+        <p class="calc-disc" id="estText"></p>
+        <a class="btn btn-wa btn-block" id="estWa" href="#" target="_blank" rel="noopener">
+          <svg class="wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.94 14.46L2 22l5.7-1.5A10 10 0 1 0 12 2Zm5.1 14.13c-.22.62-1.28 1.18-1.77 1.22-.47.05-.9.22-3.06-.64-2.57-1.01-4.2-3.66-4.33-3.83-.13-.18-1.05-1.4-1.05-2.66s.66-1.9.9-2.16c.23-.26.5-.32.67-.32l.48.01c.16.01.37-.06.58.44.22.53.73 1.84.8 1.97.06.13.1.29.02.46-.36.74-.74 1.02-.39 1.62.7 1.2 1.48 1.65 2.43 2.13.16.08.36.06.49-.08.18-.2.56-.66.71-.88.15-.22.3-.18.5-.11.2.07 1.3.61 1.52.72.22.11.37.16.42.26.06.09.06.52-.16 1.14Z"/></svg>
+          Enviar Minha Simulação pelo WhatsApp
+        </a>
+        <p class="mini-disc">A estimativa apresentada é meramente informativa, baseada nos dados que o Sr. ou a Sra. preencheu, e <strong>não representa garantia de isenção, restituição ou êxito</strong> em qualquer procedimento.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ COMO FUNCIONA ============ -->
 <section class="how" aria-labelledby="how-title">
   <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Passo a passo</span>
-      <h2 id="how-title">Como Funciona a Análise</h2>
-      <p class="lead">Um processo simples, transparente e conduzido com cuidado em cada etapa.</p>
+    <div class="read" style="text-align:center;max-width:740px">
+      <span class="kicker">Passo a passo</span>
+      <h2 class="title" id="how-title">Como funciona a análise</h2>
+      <p class="section-intro">Um processo simples, transparente e conduzido com cuidado em cada etapa.</p>
     </div>
-
     <div class="steps">
-      <div class="step-card">
-        <span class="step-num">1</span>
-        <div class="step-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg></div>
-        <h3>Etapa 1 — Envio das Informações</h3>
-        <p>O militar encaminha documentos básicos, comprovantes e laudos médicos disponíveis.</p>
-      </div>
-
-      <div class="step-card">
-        <span class="step-num">2</span>
-        <div class="step-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div>
-        <h3>Etapa 2 — Avaliação Técnica</h3>
-        <p>A equipe realiza uma análise individualizada da situação funcional, médica e tributária.</p>
-      </div>
-
-      <div class="step-card">
-        <span class="step-num">3</span>
-        <div class="step-icon"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div>
-        <h3>Etapa 3 — Orientação Jurídica</h3>
-        <p>O cliente recebe orientação sobre os próximos passos cabíveis conforme o caso concreto.</p>
-      </div>
-    </div>
-
-    <div style="text-align:center; margin-top:42px;">
-      <a class="btn btn-whatsapp" href="https://wa.me/5521967067127?text=Olá,%20sou%20militar%20inativo%20e%20gostaria%20de%20verificar%20se%20tenho%20direito%20à%20isenção%20do%20Imposto%20de%20Renda." target="_blank" rel="noopener">
-        <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.94 14.46L2 22l5.7-1.5A10 10 0 1 0 12 2Zm5.1 14.13c-.22.62-1.28 1.18-1.77 1.22-.47.05-.9.22-3.06-.64-2.57-1.01-4.2-3.66-4.33-3.83-.13-.18-1.05-1.4-1.05-2.66s.66-1.9.9-2.16c.23-.26.5-.32.67-.32l.48.01c.16.01.37-.06.58.44.22.53.73 1.84.8 1.97.06.13.1.29.02.46-.36.74-.74 1.02-.39 1.62.7 1.2 1.48 1.65 2.43 2.13.16.08.36.06.49-.08.18-.2.56-.66.71-.88.15-.22.3-.18.5-.11.2.07 1.3.61 1.52.72.22.11.37.16.42.26.06.09.06.52-.16 1.14Z"/></svg>
-        Enviar Minhas Informações pelo WhatsApp
-      </a>
+      <div class="step"><span class="n">1</span><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M9 13h6M9 17h6"/></svg></div><h3>Etapa 1 — Envio das Informações</h3><p>O militar encaminha documentos básicos, comprovantes e laudos médicos disponíveis.</p></div>
+      <div class="step"><span class="n">2</span><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="m21 21-4.3-4.3"/></svg></div><h3>Etapa 2 — Avaliação Técnica</h3><p>A equipe realiza uma análise individualizada da situação funcional, médica e tributária.</p></div>
+      <div class="step"><span class="n">3</span><div class="ic"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 11l3 3L22 4"/><path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/></svg></div><h3>Etapa 3 — Orientação Jurídica</h3><p>O cliente recebe orientação sobre os próximos passos cabíveis conforme o caso concreto.</p></div>
     </div>
   </div>
 </section>
 
-<!-- ===================== CREDIBILIDADE ===================== -->
-<section class="credib" aria-labelledby="cred-title">
+<!-- ============ CREDIBILIDADE ============ -->
+<section class="cred" aria-labelledby="cred-title">
   <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Nossos diferenciais</span>
-      <h2 id="cred-title">Atendimento sério, próximo e transparente</h2>
+    <div class="read" style="text-align:center;max-width:740px">
+      <span class="kicker">Nossos diferenciais</span>
+      <h2 class="title" id="cred-title">Atendimento sério, próximo e transparente</h2>
     </div>
-
-    <div class="credib-grid">
-      <div class="credib-item"><span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>Atendimento humanizado</div>
-      <div class="credib-item"><span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>Atuação especializada</div>
-      <div class="credib-item"><span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>Análise individualizada</div>
-      <div class="credib-item"><span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>Atendimento digital em todo o Brasil</div>
-      <div class="credib-item"><span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>Transparência e segurança em todas as etapas</div>
-      <div class="credib-item"><span class="check"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>Linguagem clara e orientação objetiva</div>
+    <div class="cred-grid">
+      <div class="cred-item"><span class="ck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>Atendimento humanizado</div>
+      <div class="cred-item"><span class="ck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>Atuação especializada</div>
+      <div class="cred-item"><span class="ck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>Análise individualizada</div>
+      <div class="cred-item"><span class="ck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>Atendimento digital em todo o Brasil</div>
+      <div class="cred-item"><span class="ck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>Transparência e segurança em todas as etapas</div>
+      <div class="cred-item"><span class="ck"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>Linguagem clara e orientação objetiva</div>
     </div>
-
-    <p class="credib-note">Nosso atendimento busca oferecer clareza e segurança para que o Sr. compreenda a sua situação com tranquilidade, no seu tempo e com o devido respeito à sua trajetória de serviço.</p>
+    <p class="cred-note">O atendimento busca oferecer clareza e segurança para que o militar compreenda sua situação antes de tomar qualquer decisão.</p>
   </div>
 </section>
 
-<!-- ===================== FAQ ===================== -->
-<section class="faq" aria-labelledby="faq-title">
+<!-- ============ FAQ ============ -->
+<section class="faq" id="duvidas" aria-labelledby="faq-title">
   <div class="container">
-    <div class="section-head">
-      <span class="eyebrow">Tire suas dúvidas</span>
-      <h2 id="faq-title">Dúvidas Frequentes</h2>
+    <div class="read" style="text-align:center">
+      <span class="kicker">Tire suas dúvidas</span>
+      <h2 class="title" id="faq-title">Dúvidas frequentes</h2>
     </div>
-
-    <div class="faq-list">
-      <article class="faq-item">
-        <h3>
-          <button class="faq-q" aria-expanded="false" aria-controls="faq1">
-            A isenção é automática?
-            <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
-          </button>
-        </h3>
-        <div class="faq-a" id="faq1"><div class="faq-a-inner">Não necessariamente. Em geral, é preciso analisar documentos, condição de saúde, situação funcional e descontos realizados.</div></div>
-      </article>
-
-      <article class="faq-item">
-        <h3>
-          <button class="faq-q" aria-expanded="false" aria-controls="faq2">
-            Quem está na reserva remunerada pode verificar essa possibilidade?
-            <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
-          </button>
-        </h3>
-        <div class="faq-a" id="faq2"><div class="faq-a-inner">Sim. Militares da reserva remunerada podem verificar se a situação se enquadra nas hipóteses legais, conforme análise individual.</div></div>
-      </article>
-
-      <article class="faq-item">
-        <h3>
-          <button class="faq-q" aria-expanded="false" aria-controls="faq3">
-            É possível recuperar valores pagos anteriormente?
-            <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
-          </button>
-        </h3>
-        <div class="faq-a" id="faq3"><div class="faq-a-inner">Em alguns casos, pode existir possibilidade de restituição de valores, mas isso depende da análise dos documentos e do caso concreto.</div></div>
-      </article>
-
-      <article class="faq-item">
-        <h3>
-          <button class="faq-q" aria-expanded="false" aria-controls="faq4">
-            Preciso ter laudo médico?
-            <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
-          </button>
-        </h3>
-        <div class="faq-a" id="faq4"><div class="faq-a-inner">Laudos, exames e relatórios médicos ajudam na análise. A documentação disponível deve ser avaliada de forma individualizada.</div></div>
-      </article>
-
-      <article class="faq-item">
-        <h3>
-          <button class="faq-q" aria-expanded="false" aria-controls="faq5">
-            O atendimento pode ser feito online?
-            <svg class="arrow" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg>
-          </button>
-        </h3>
-        <div class="faq-a" id="faq5"><div class="faq-a-inner">Sim. O atendimento pode ser feito digitalmente, com envio de documentos e orientação pelos canais disponíveis.</div></div>
-      </article>
+    <div class="faq-list" id="faqList">
+      <article class="faq-item"><h3><button class="faq-q" aria-expanded="false" aria-controls="fa1">A isenção é automática?<svg class="arw" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg></button></h3><div class="faq-a" id="fa1"><div class="in">Não necessariamente. Em geral, é preciso analisar documentos, condição de saúde, situação funcional e descontos realizados.</div></div></article>
+      <article class="faq-item"><h3><button class="faq-q" aria-expanded="false" aria-controls="fa2">Quem está na reserva remunerada pode verificar essa possibilidade?<svg class="arw" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg></button></h3><div class="faq-a" id="fa2"><div class="in">Sim. Militares da reserva remunerada podem verificar se a situação se enquadra nas hipóteses legais, conforme análise individual.</div></div></article>
+      <article class="faq-item"><h3><button class="faq-q" aria-expanded="false" aria-controls="fa3">É possível recuperar valores pagos anteriormente?<svg class="arw" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg></button></h3><div class="faq-a" id="fa3"><div class="in">Em alguns casos, pode existir possibilidade de restituição de valores, mas isso depende da análise dos documentos e do caso concreto.</div></div></article>
+      <article class="faq-item"><h3><button class="faq-q" aria-expanded="false" aria-controls="fa4">Preciso ter laudo médico?<svg class="arw" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg></button></h3><div class="faq-a" id="fa4"><div class="in">Laudos, exames e relatórios médicos ajudam na análise. A documentação disponível deve ser avaliada de forma individualizada.</div></div></article>
+      <article class="faq-item"><h3><button class="faq-q" aria-expanded="false" aria-controls="fa5">O atendimento pode ser feito online?<svg class="arw" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg></button></h3><div class="faq-a" id="fa5"><div class="in">Sim. O atendimento pode ser feito digitalmente, com envio de documentos e orientação pelos canais disponíveis.</div></div></article>
+      <article class="faq-item"><h3><button class="faq-q" aria-expanded="false" aria-controls="fa6">A calculadora mostra o valor exato da restituição?<svg class="arw" viewBox="0 0 24 24" aria-hidden="true"><path d="M7 10l5 5 5-5z"/></svg></button></h3><div class="faq-a" id="fa6"><div class="in">Não. A calculadora apresenta apenas uma estimativa inicial com base nos valores informados. O valor final depende de análise jurídica e documental.</div></div></article>
     </div>
   </div>
 </section>
 
-<!-- ===================== CHAMADA FINAL ===================== -->
-<section class="final-cta" aria-labelledby="final-title">
+<!-- ============ CHAMADA FINAL ============ -->
+<section class="final" aria-labelledby="final-title">
   <div class="container">
     <h2 id="final-title">Não deixe de verificar um direito que pode impactar sua renda mensal.</h2>
     <p>Cada situação possui particularidades. Uma análise técnica pode trazer mais clareza sobre o seu enquadramento legal.</p>
-    <a class="btn btn-whatsapp" href="https://wa.me/5521967067127?text=Olá,%20sou%20militar%20inativo%20e%20gostaria%20de%20verificar%20se%20tenho%20direito%20à%20isenção%20do%20Imposto%20de%20Renda." target="_blank" rel="noopener">
-      <svg class="wa-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.94 14.46L2 22l5.7-1.5A10 10 0 1 0 12 2Zm5.1 14.13c-.22.62-1.28 1.18-1.77 1.22-.47.05-.9.22-3.06-.64-2.57-1.01-4.2-3.66-4.33-3.83-.13-.18-1.05-1.4-1.05-2.66s.66-1.9.9-2.16c.23-.26.5-.32.67-.32l.48.01c.16.01.37-.06.58.44.22.53.73 1.84.8 1.97.06.13.1.29.02.46-.36.74-.74 1.02-.39 1.62.7 1.2 1.48 1.65 2.43 2.13.16.08.36.06.49-.08.18-.2.56-.66.71-.88.15-.22.3-.18.5-.11.2.07 1.3.61 1.52.72.22.11.37.16.42.26.06.09.06.52-.16 1.14Z"/></svg>
+    <a class="btn btn-wa" href="https://wa.me/5521967067127?text=Ol%C3%A1%2C%20sou%20militar%20inativo%20e%20gostaria%20de%20verificar%20se%20tenho%20direito%20%C3%A0%20isen%C3%A7%C3%A3o%20do%20Imposto%20de%20Renda." target="_blank" rel="noopener">
+      <svg class="wa" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.94 14.46L2 22l5.7-1.5A10 10 0 1 0 12 2Zm5.1 14.13c-.22.62-1.28 1.18-1.77 1.22-.47.05-.9.22-3.06-.64-2.57-1.01-4.2-3.66-4.33-3.83-.13-.18-1.05-1.4-1.05-2.66s.66-1.9.9-2.16c.23-.26.5-.32.67-.32l.48.01c.16.01.37-.06.58.44.22.53.73 1.84.8 1.97.06.13.1.29.02.46-.36.74-.74 1.02-.39 1.62.7 1.2 1.48 1.65 2.43 2.13.16.08.36.06.49-.08.18-.2.56-.66.71-.88.15-.22.3-.18.5-.11.2.07 1.3.61 1.52.72.22.11.37.16.42.26.06.09.06.52-.16 1.14Z"/></svg>
       Conversar pelo WhatsApp
     </a>
-    <p class="final-note">Atendimento digital em todo o Brasil · Resposta com clareza e segurança</p>
+    <p class="fn">Atendimento digital em todo o Brasil · Resposta com clareza e segurança</p>
   </div>
 </section>
-
 </main>
 
-<!-- ===================== FOOTER ===================== -->
-<footer aria-labelledby="footer-title">
+<!-- ============ FOOTER ============ -->
+<footer id="contato" aria-labelledby="footer-title">
   <div class="container">
     <h2 id="footer-title" class="sr-only">Informações do escritório e avisos legais</h2>
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <h3>Fábia Borges Sociedade Individual de Advocacia</h3>
-        <p class="oab">Dra. Fábia Adilina Cordeiro Borges — OAB/BA 88.678 · OAB/RJ 180.383</p>
-        <div class="footer-contact">
-          <p><strong>Endereço:</strong> Av. Governador Lomanto Júnior, nº 1001, Bairro Joaquim Romão, Jequié/BA</p>
+    <div class="foot-grid">
+      <div class="foot-brand">
+        <h3>Fabia Borges Sociedade Individual de Advocacia</h3>
+        <p class="pro">Fábia Adilina Cordeiro Borges</p>
+        <p class="oab">OAB/BA 88.678 | OAB/RJ 180.383</p>
+        <div class="foot-contact">
           <p><strong>CNPJ:</strong> 63.659.028/0001-55</p>
           <p><strong>E-mail:</strong> <a href="mailto:fabiaborges.adv@gmail.com">fabiaborges.adv@gmail.com</a></p>
-          <p><strong>WhatsApp:</strong> <a href="https://wa.me/5521967067127" target="_blank" rel="noopener">(21) 96706-7127</a></p>
+          <p><strong>Endereço:</strong> Av. Governador Lomanto Júnior, nº 1001, Bairro Joaquim Romão, Jequié-BA</p>
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/5521967067127" target="_blank" rel="noopener">+55 21 96706-7127</a></p>
         </div>
       </div>
-
-      <div class="footer-compliance">
+      <div class="compliance">
         <p>A análise do direito depende da avaliação individual dos documentos e das circunstâncias de cada caso concreto. O conteúdo deste site possui caráter meramente informativo e não constitui promessa de resultado.</p>
         <p>As informações apresentadas não substituem consulta jurídica individualizada.</p>
+        <p>A estimativa apresentada pela calculadora é meramente informativa, baseada nos dados fornecidos pelo usuário, e não representa garantia de isenção, restituição ou êxito em qualquer procedimento.</p>
       </div>
     </div>
-
-    <div class="footer-bottom">
-      <p>© <span id="year"></span> Fábia Borges Sociedade Individual de Advocacia — CNPJ 63.659.028/0001-55. Todos os direitos reservados. Conteúdo de caráter meramente informativo, em conformidade com o Código de Ética e Disciplina da OAB.</p>
+    <div class="foot-bottom">
+      <p>© <span id="year"></span> Fabia Borges Sociedade Individual de Advocacia — Conteúdo informativo, em conformidade com o Código de Ética e Disciplina da OAB.</p>
     </div>
   </div>
 </footer>
 
-<!-- ===================== BOTÃO FLUTUANTE WHATSAPP ===================== -->
-<a class="wa-float" href="https://wa.me/5521967067127?text=Olá,%20sou%20militar%20inativo%20e%20gostaria%20de%20verificar%20se%20tenho%20direito%20à%20isenção%20do%20Imposto%20de%20Renda." target="_blank" rel="noopener" aria-label="Falar agora pelo WhatsApp">
+<!-- ============ WHATSAPP FLUTUANTE ============ -->
+<a class="wa-float" href="https://wa.me/5521967067127?text=Ol%C3%A1%2C%20sou%20militar%20inativo%20e%20gostaria%20de%20verificar%20se%20tenho%20direito%20%C3%A0%20isen%C3%A7%C3%A3o%20do%20Imposto%20de%20Renda." target="_blank" rel="noopener" aria-label="Falar agora pelo WhatsApp">
   <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.94 14.46L2 22l5.7-1.5A10 10 0 1 0 12 2Zm5.1 14.13c-.22.62-1.28 1.18-1.77 1.22-.47.05-.9.22-3.06-.64-2.57-1.01-4.2-3.66-4.33-3.83-.13-.18-1.05-1.4-1.05-2.66s.66-1.9.9-2.16c.23-.26.5-.32.67-.32l.48.01c.16.01.37-.06.58.44.22.53.73 1.84.8 1.97.06.13.1.29.02.46-.36.74-.74 1.02-.39 1.62.7 1.2 1.48 1.65 2.43 2.13.16.08.36.06.49-.08.18-.2.56-.66.71-.88.15-.22.3-.18.5-.11.2.07 1.3.61 1.52.72.22.11.37.16.42.26.06.09.06.52-.16 1.14Z"/></svg>
-  <span class="wa-text">Fale conosco</span>
+  <span class="t">Fale conosco</span>
 </a>
 
 <script>
-(function () {
+(function(){
   "use strict";
+  var WA = "https://wa.me/5521967067127?text=";
 
-  var WA_BASE = "https://wa.me/5521967067127?text=";
-
-  /* ---------- Ano no rodapé ---------- */
   document.getElementById("year").textContent = new Date().getFullYear();
 
-  /* ---------- FAQ acordeão (acessível) ---------- */
-  var faqButtons = document.querySelectorAll(".faq-q");
-  faqButtons.forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      var expanded = btn.getAttribute("aria-expanded") === "true";
+  /* ---------- FAQ ---------- */
+  document.querySelectorAll(".faq-q").forEach(function(btn){
+    btn.addEventListener("click", function(){
+      var open = btn.getAttribute("aria-expanded") === "true";
       var panel = document.getElementById(btn.getAttribute("aria-controls"));
-      btn.setAttribute("aria-expanded", String(!expanded));
-      if (expanded) {
-        panel.style.maxHeight = null;
-      } else {
-        panel.style.maxHeight = panel.scrollHeight + "px";
-      }
+      btn.setAttribute("aria-expanded", String(!open));
+      panel.style.maxHeight = open ? null : panel.scrollHeight + "px";
     });
   });
 
-  /* ---------- Assistente de verificação (passo a passo) ---------- */
-  var TOTAL = 5;
-  var answers = {};
-  var card = document.querySelector(".quiz-card");
-  var stepsWrap = document.getElementById("quizSteps");
-  var allSteps = stepsWrap.querySelectorAll(".quiz-step");
-  var progressBar = document.getElementById("progressBar");
-  var progressEl = document.querySelector(".quiz-progress");
-  var stepLabel = document.getElementById("stepLabel");
-  var dots = document.getElementById("quizDots").querySelectorAll("i");
+  /* =========================================================
+     QUIZ — 7 etapas, uma pergunta por tela
+     ========================================================= */
+  var QUESTIONS = [
+    { q:"O Sr. ou a Sra. é militar reformado, da reserva remunerada ou inativo?",
+      help:"Vamos começar com uma pergunta simples.",
+      opts:[ {t:"Sim",p:1}, {t:"Não",p:0}, {t:"Não sei informar",p:0.5} ] },
+    { q:"O Sr. ou a Sra. possui diagnóstico de alguma doença grave ou condição de saúde relevante?",
+      help:"Responda da forma que souber.",
+      opts:[ {t:"Sim",p:1}, {t:"Não",p:0}, {t:"Não sei informar",p:0.5} ] },
+    { q:"O Sr. ou a Sra. possui laudos médicos, exames, relatórios ou documentos de tratamento?",
+      help:"Mesmo documentos antigos podem ajudar na análise.",
+      opts:[ {t:"Sim",p:1}, {t:"Não",p:0}, {t:"Tenho alguns documentos",p:1} ] },
+    { q:"Atualmente existe desconto de Imposto de Renda nos seus proventos?",
+      help:"Esse desconto costuma aparecer no contracheque.",
+      opts:[ {t:"Sim",p:1}, {t:"Não",p:0}, {t:"Não sei verificar",p:0.5} ] },
+    { q:"A condição de saúde surgiu antes ou durante o período em que houve desconto de Imposto de Renda?",
+      help:"Falta pouco para concluir sua verificação.",
+      opts:[ {t:"Sim",p:1}, {t:"Não",p:0}, {t:"Não sei informar",p:0.5} ] },
+    { q:"O caso pode estar relacionado a acidente em serviço ou moléstia profissional?",
+      help:"Se tiver dúvida, escolha “Não sei informar”.",
+      opts:[ {t:"Sim",p:1}, {t:"Não",p:0}, {t:"Não sei informar",p:0.5} ] },
+    { q:"O Sr. ou a Sra. gostaria de receber uma análise inicial para verificar possibilidade de isenção e eventual restituição?",
+      help:"Agora vamos mostrar uma orientação inicial com base nas suas respostas.",
+      opts:[ {t:"Sim",p:1}, {t:"Não",p:0}, {t:"Quero apenas tirar dúvidas",p:0.5} ] }
+  ];
+  var TOTAL = QUESTIONS.length;
 
-  /* Conteúdo dos dois resultados possíveis */
-  var RESULTS = {
-    positive: {
-      iconClass: "positive",
-      svg: '<path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/>',
-      title: "Seu caso pode merecer uma análise jurídica especializada.",
-      text: "Nossa equipe pode avaliar sua situação de forma individualizada.",
-      btnLabel: "Falar com um Especialista",
-      waMsg: "Olá, fiz a verificação inicial no site e gostaria de falar com um especialista sobre a isenção do Imposto de Renda para militares."
-    },
-    neutral: {
-      iconClass: "neutral",
-      svg: '<circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1" stroke-linecap="round" stroke-linejoin="round"/>',
-      title: "Vale a pena esclarecer a sua situação.",
-      text: "Mesmo que as respostas ainda não indiquem todos os elementos necessários, pode ser útil esclarecer sua situação com uma análise inicial. Cada caso depende dos documentos e das circunstâncias concretas.",
-      btnLabel: "Tirar Dúvidas pelo WhatsApp",
-      waMsg: "Olá, fiz a verificação inicial no site e gostaria de tirar algumas dúvidas sobre a isenção do Imposto de Renda para militares."
-    }
-  };
+  var answers = new Array(TOTAL).fill(null); // {t, p}
+  var current = 0; // índice da pergunta atual
 
-  function setProgress(name) {
-    var done, valuenow, labelText;
-    if (name === "0") { done = 0; valuenow = 0; labelText = "Vamos começar"; }
-    else if (name === "result") { done = TOTAL; valuenow = TOTAL; labelText = "Resultado"; }
-    else { var n = parseInt(name, 10); done = n - 1; valuenow = n - 1; labelText = "Pergunta " + n + " de " + TOTAL; }
+  var panelIntro   = document.getElementById("panelIntro");
+  var panelQuestion= document.getElementById("panelQuestion");
+  var panelResult  = document.getElementById("quizResult");
+  var quizTop      = document.getElementById("quizTop");
+  var stepLabel    = document.getElementById("stepLabel");
+  var bar          = document.getElementById("bar");
+  var barRole      = quizTop.querySelector(".bar");
+  var dots         = document.getElementById("dots");
+  var qText        = document.getElementById("qText");
+  var qHelp        = document.getElementById("qHelp");
+  var qOpts        = document.getElementById("qOpts");
+  var backBtn      = document.getElementById("backBtn");
 
-    progressBar.style.width = (done / TOTAL * 100) + "%";
-    progressEl.setAttribute("aria-valuenow", String(valuenow));
-    stepLabel.textContent = labelText;
+  // monta os dots
+  for (var d=0; d<TOTAL; d++){ var i=document.createElement("i"); dots.appendChild(i); }
 
-    dots.forEach(function (d, i) {
-      var qn = i + 1;
-      d.classList.remove("done", "current");
-      if (name === "result") { d.classList.add("done"); }
-      else if (name !== "0") {
-        var cur = parseInt(name, 10);
-        if (qn < cur) d.classList.add("done");
-        else if (qn === cur) d.classList.add("current");
-      }
+  function show(panel){
+    [panelIntro,panelQuestion,panelResult].forEach(function(p){ p.classList.remove("on"); });
+    panel.classList.add("on");
+  }
+
+  function updateProgress(){
+    var n = current + 1;
+    stepLabel.textContent = "Etapa " + n + " de " + TOTAL;
+    bar.style.width = (n/TOTAL*100) + "%";
+    barRole.setAttribute("aria-valuenow", String(n));
+    dots.querySelectorAll("i").forEach(function(el,idx){
+      el.className = idx < current ? "done" : (idx === current ? "on" : "");
     });
   }
 
-  function go(name) {
-    allSteps.forEach(function (s) {
-      s.classList.toggle("active", s.getAttribute("data-step") === String(name));
-    });
-    setProgress(name);
-
-    var stepEl = stepsWrap.querySelector('.quiz-step[data-step="' + name + '"]');
-
-    // reflete resposta já dada (ao voltar)
-    if (name !== "0" && name !== "result") {
-      var q = parseInt(name, 10);
-      stepEl.querySelectorAll(".opt-btn").forEach(function (b) {
-        var on = answers[q] === b.getAttribute("data-val");
-        b.classList.toggle("selected", on);
-        b.setAttribute("aria-pressed", on ? "true" : "false");
+  function renderQuestion(){
+    var item = QUESTIONS[current];
+    qText.textContent = item.q;
+    qHelp.textContent = item.help;
+    qOpts.innerHTML = "";
+    item.opts.forEach(function(o){
+      var b = document.createElement("button");
+      b.type = "button";
+      b.className = "opt" + (answers[current] && answers[current].t === o.t ? " sel" : "");
+      b.innerHTML = '<span class="mk"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 16.2 4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg></span>' + o.t;
+      b.addEventListener("click", function(){
+        answers[current] = { t:o.t, p:o.p };
+        qOpts.querySelectorAll(".opt").forEach(function(x){ x.classList.remove("sel"); });
+        b.classList.add("sel");
+        setTimeout(advance, 320);
       });
+      qOpts.appendChild(b);
+    });
+    backBtn.disabled = false;
+    updateProgress();
+    show(panelQuestion);
+  }
+
+  function advance(){
+    if (current < TOTAL - 1){ current++; renderQuestion(); }
+    else { showResult(); }
+  }
+
+  backBtn.addEventListener("click", function(){
+    if (current > 0){ current--; renderQuestion(); }
+    else { show(panelIntro); quizTop.hidden = true; }
+  });
+
+  document.getElementById("startBtn").addEventListener("click", function(){
+    current = 0;
+    quizTop.hidden = false;
+    renderQuestion();
+    panelQuestion.scrollIntoView({behavior:"smooth", block:"center"});
+  });
+
+  // estado compartilhado com a calculadora
+  window.__verif = { pontuacao:0, resultado:"" };
+
+  function showResult(){
+    var score = answers.reduce(function(s,a){ return s + (a ? a.p : 0); }, 0);
+    score = Math.round(score*2)/2;
+
+    var ic = document.getElementById("resIc");
+    var svg = document.getElementById("resSvg");
+    var title = document.getElementById("resTitle");
+    var msg = document.getElementById("resMsg");
+    var wa = document.getElementById("resWa");
+    var waLabel = document.getElementById("resWaLabel");
+
+    var data, label, icClass, baseMsg;
+    if (score >= 4){
+      icClass = "s3";
+      label = "Possibilidade relevante de análise";
+      title.textContent = "Seu caso pode merecer uma análise jurídica especializada.";
+      msg.textContent = "Pelas respostas informadas, existem elementos que podem justificar uma avaliação individualizada sobre possível isenção do Imposto de Renda e eventual restituição de valores.";
+      waLabel.textContent = "Falar com um Especialista";
+      baseMsg = "Olá, fiz a verificação online no site e gostaria de falar com um especialista sobre a isenção do Imposto de Renda para militares.";
+      svg.innerHTML = '<path d="M20 6 9 17l-5-5" stroke-linecap="round" stroke-linejoin="round"/>';
+    } else if (score >= 2){
+      icClass = "s2";
+      label = "Pode ser útil esclarecer";
+      title.textContent = "Pode ser útil esclarecer melhor a sua situação.";
+      msg.textContent = "As respostas indicam que alguns pontos ainda dependem de documentos, histórico médico, situação funcional e descontos realizados.";
+      waLabel.textContent = "Tirar Dúvidas pelo WhatsApp";
+      baseMsg = "Olá, fiz a verificação online no site e gostaria de tirar algumas dúvidas sobre a isenção do Imposto de Renda para militares.";
+      svg.innerHTML = '<circle cx="12" cy="12" r="9"/><path d="M12 8h.01M11 12h1v4h1" stroke-linecap="round" stroke-linejoin="round"/>';
+    } else {
+      icClass = "s1";
+      label = "Elementos iniciais insuficientes";
+      title.textContent = "Ainda não há elementos suficientes para uma conclusão inicial.";
+      msg.textContent = "Com as informações fornecidas, ainda não é possível identificar elementos suficientes para uma conclusão inicial. Mesmo assim, caso o Sr. ou a Sra. tenha dúvidas sobre descontos de Imposto de Renda, é possível solicitar uma orientação inicial.";
+      waLabel.textContent = "Conversar pelo WhatsApp";
+      baseMsg = "Olá, fiz a verificação online no site e gostaria de uma orientação inicial sobre descontos de Imposto de Renda nos meus proventos.";
+      svg.innerHTML = '<path d="M12 16v-4M12 8h.01" stroke-linecap="round"/><circle cx="12" cy="12" r="9"/>';
     }
 
-    // mantém o cartão visível sem saltos bruscos
-    if (card) card.scrollIntoView({ behavior: "smooth", block: "nearest" });
+    ic.className = "result-ic " + icClass;
+    wa.setAttribute("href", WA + encodeURIComponent(baseMsg));
 
-    var focusEl = stepEl.querySelector("button, a, [tabindex]");
-    if (focusEl) { try { focusEl.focus({ preventScroll: true }); } catch (e) { focusEl.focus(); } }
+    window.__verif.pontuacao = score;
+    window.__verif.resultado = label;
+
+    show(panelResult);
+    updateProgress();
+    bar.style.width = "100%";
+    panelResult.focus();
+    panelResult.scrollIntoView({behavior:"smooth", block:"center"});
   }
 
-  function showResult() {
-    var simCount = 0;
-    for (var i = 1; i <= TOTAL; i++) { if (answers[i] === "sim") simCount++; }
-    var data = simCount >= 3 ? RESULTS.positive : RESULTS.neutral;
+  document.getElementById("restartBtn").addEventListener("click", function(){
+    answers = new Array(TOTAL).fill(null);
+    current = 0;
+    quizTop.hidden = true;
+    show(panelIntro);
+    panelIntro.scrollIntoView({behavior:"smooth", block:"center"});
+  });
 
-    document.getElementById("resultIcon").className = "result-icon " + data.iconClass;
-    document.getElementById("resultSvg").innerHTML = data.svg;
-    document.getElementById("resultTitle").textContent = data.title;
-    document.getElementById("resultText").textContent = data.text;
-    document.getElementById("resultBtnLabel").textContent = data.btnLabel;
-    document.getElementById("resultBtn").setAttribute("href", WA_BASE + encodeURIComponent(data.waMsg));
+  /* =========================================================
+     CALCULADORA — estimativa bruta informativa
+     ========================================================= */
+  var form = document.getElementById("calcForm");
+  var calcResult = document.getElementById("calcResult");
 
-    go("result");
+  function parseMoney(v){
+    if(!v) return NaN;
+    v = String(v).trim().replace(/\s/g,"").replace(/r\$/i,"").replace(/\./g,"").replace(",",".");
+    return parseFloat(v);
+  }
+  function brl(n){ return n.toLocaleString("pt-BR",{style:"currency",currency:"BRL"}); }
+
+  function setError(id, on){
+    var f = document.getElementById(id);
+    if(f) f.classList.toggle("error", !!on);
   }
 
-  /* Iniciar */
-  document.getElementById("startBtn").addEventListener("click", function () { go("1"); });
+  form.addEventListener("submit", function(e){
+    e.preventDefault();
 
-  /* Opções Sim/Não — registram resposta e avançam sozinhas */
-  stepsWrap.querySelectorAll(".opt-btn").forEach(function (btn) {
-    btn.addEventListener("click", function () {
-      var q = parseInt(btn.getAttribute("data-q"), 10);
-      answers[q] = btn.getAttribute("data-val");
+    var nome = document.getElementById("nome").value.trim();
+    var whats = document.getElementById("whatsapp").value.trim();
+    var email = document.getElementById("email").value.trim();
+    var valor = parseMoney(document.getElementById("valor").value);
+    var meses = parseInt(document.getElementById("meses").value, 10);
+    var comprovantes = document.getElementById("comprovantes").value;
+    var laudos = document.getElementById("laudos").value;
+    var deseja = document.getElementById("deseja").value;
+    var consent = document.getElementById("consent").checked;
 
-      var stepEl = btn.closest(".quiz-step");
-      stepEl.querySelectorAll(".opt-btn").forEach(function (b) {
-        var on = b === btn;
-        b.classList.toggle("selected", on);
-        b.setAttribute("aria-pressed", on ? "true" : "false");
-      });
+    // validação
+    var ok = true;
+    setError("f-nome", !nome); if(!nome) ok=false;
+    setError("f-whats", !whats); if(!whats) ok=false;
+    var emailBad = email && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+    setError("f-email", emailBad); if(emailBad) ok=false;
+    var valorBad = !(valor > 0); setError("f-valor", valorBad); if(valorBad) ok=false;
+    var mesesBad = !(meses > 0); setError("f-meses", mesesBad); if(mesesBad) ok=false;
 
-      setTimeout(function () {
-        if (q < TOTAL) { go(String(q + 1)); }
-        else { showResult(); }
-      }, 380);
-    });
+    var consentBox = document.getElementById("consentBox");
+    var consentErr = document.getElementById("consentErr");
+    consentBox.classList.toggle("error", !consent);
+    consentErr.classList.toggle("show", !consent);
+    if(!consent) ok=false;
+
+    if(!ok){
+      var firstErr = form.querySelector(".error");
+      if(firstErr){ var inp = firstErr.querySelector("input,select"); if(inp) inp.focus(); }
+      else if(!consent){ document.getElementById("consent").focus(); }
+      return;
+    }
+
+    // cálculo
+    var estimativa = valor * meses;
+
+    var band;
+    if (estimativa <= 5000) band = "Estimativa inicial de menor valor";
+    else if (estimativa <= 20000) band = "Estimativa inicial intermediária";
+    else band = "Estimativa inicial elevada";
+
+    document.getElementById("estVal").textContent = brl(estimativa);
+    document.getElementById("estBand").textContent = band;
+    document.getElementById("estText").textContent =
+      "Com base nas informações preenchidas, os descontos informados somam aproximadamente " + brl(estimativa) +
+      ". Esse número é apenas uma estimativa bruta e não representa garantia de restituição. A possibilidade de pedido, o período aplicável e os valores dependem de análise individualizada.";
+
+    // mensagem para WhatsApp
+    var quizRes = window.__verif.resultado || "não realizada";
+    var waMsg = "Olá, meu nome é " + nome + ". Sou militar inativo/reformado/da reserva e fiz a verificação online no site. " +
+      "Minha estimativa bruta de descontos de Imposto de Renda foi de aproximadamente " + brl(estimativa) +
+      " (valor médio mensal de " + brl(valor) + " por " + meses + " meses). " +
+      "Resultado da verificação: " + quizRes + ". " +
+      "Gostaria de verificar se existe possibilidade de isenção e eventual restituição, conforme análise dos meus documentos.";
+    document.getElementById("estWa").setAttribute("href", WA + encodeURIComponent(waMsg));
+
+    /* ----------------------------------------------------------------
+       OBJETO PRONTO PARA INTEGRAÇÃO FUTURA
+       Estrutura organizada para enviar, futuramente, a uma planilha,
+       CRM, Google Sheets ou webhook. Nenhum dado é enviado a servidor
+       externo neste momento — apenas registrado no console do navegador.
+       Para integrar futuramente, capture este objeto e faça um POST,
+       por exemplo:
+         // fetch("URL_DO_SEU_WEBHOOK_OU_GOOGLE_APPS_SCRIPT", {
+         //   method:"POST",
+         //   headers:{ "Content-Type":"application/json" },
+         //   body: JSON.stringify(dadosSimulacao)
+         // });
+    ---------------------------------------------------------------- */
+    var dadosSimulacao = {
+      dataSimulacao: new Date().toISOString(),
+      nome: nome,
+      whatsapp: whats,
+      email: email || null,
+      pontuacaoQuiz: window.__verif.pontuacao,
+      resultadoQuiz: quizRes,
+      valorMensalIR: valor,
+      quantidadeMeses: meses,
+      estimativaBruta: estimativa,
+      possuiComprovantes: comprovantes,
+      possuiLaudos: laudos,
+      desejaContatoWhatsApp: deseja,
+      origemPagina: window.location.href,
+      consentimentoLGPD: consent
+    };
+    console.log("%c[Simulação registrada] Dados prontos para integração (Google Sheets / CRM / webhook):", "color:#1f6043;font-weight:bold");
+    console.log(dadosSimulacao);
+    // Ponto de integração futura: enviar 'dadosSimulacao' ao seu sistema (planilha/CRM/webhook).
+
+    calcResult.classList.add("show");
+    calcResult.focus();
+    calcResult.scrollIntoView({behavior:"smooth", block:"center"});
   });
 
-  /* Voltar */
-  stepsWrap.querySelectorAll("[data-back]").forEach(function (b) {
-    b.addEventListener("click", function () {
-      var n = parseInt(b.closest(".quiz-step").getAttribute("data-step"), 10);
-      go(n <= 1 ? "0" : String(n - 1));
+  // limpa erro ao editar
+  ["nome","whatsapp","email","valor","meses"].forEach(function(id){
+    var el = document.getElementById(id);
+    if(el) el.addEventListener("input", function(){
+      var f = el.closest(".field"); if(f) f.classList.remove("error");
     });
   });
-
-  /* Refazer */
-  document.getElementById("restartBtn").addEventListener("click", function () {
-    answers = {};
-    stepsWrap.querySelectorAll(".opt-btn").forEach(function (b) {
-      b.classList.remove("selected");
-      b.setAttribute("aria-pressed", "false");
-    });
-    go("0");
+  document.getElementById("consent").addEventListener("change", function(){
+    if(this.checked){
+      document.getElementById("consentBox").classList.remove("error");
+      document.getElementById("consentErr").classList.remove("show");
+    }
   });
-
-  setProgress("0");
 })();
 </script>
 
